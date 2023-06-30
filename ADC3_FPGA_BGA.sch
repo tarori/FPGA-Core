@@ -4872,21 +4872,22 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <net name="N$10" class="0">
 <segment>
 <pinref part="IC7" gate="G$1" pin="EEDATA"/>
-<wire x1="269.24" y1="144.78" x2="292.1" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="144.78" x2="287.02" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="IC6" gate="G$1" pin="DI"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="287.02" y1="144.78" x2="292.1" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="142.24" x2="287.02" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="142.24" x2="287.02" y2="143.51" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="143.51" x2="287.02" y2="144.78" width="0.1524" layer="91"/>
+<junction x="287.02" y="144.78"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="IC7" gate="G$1" pin="EECS"/>
-<wire x1="292.1" y1="149.86" x2="288.29" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="288.29" y1="149.86" x2="287.02" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="149.86" x2="287.02" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="139.7" x2="287.02" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="139.7" x2="287.02" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="284.48" y1="142.24" x2="287.02" y2="142.24" width="0.1524" layer="91"/>
-<junction x="287.02" y="142.24"/>
+<wire x1="292.1" y1="149.86" x2="289.56" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="149.86" x2="289.56" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="139.7" x2="289.56" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="IC6" gate="G$1" pin="CS"/>
 </segment>
 </net>
