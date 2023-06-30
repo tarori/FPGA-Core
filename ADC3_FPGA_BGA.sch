@@ -3228,6 +3228,28 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="502.92" y1="147.32" x2="502.92" y2="205.74" width="0.508" layer="97"/>
 <wire x1="502.92" y1="205.74" x2="408.94" y2="205.74" width="0.508" layer="97"/>
 <text x="411.48" y="149.86" size="5.08" layer="97">DRAM</text>
+<wire x1="81.28" y1="162.56" x2="81.28" y2="259.08" width="0.508" layer="97"/>
+<wire x1="81.28" y1="259.08" x2="205.74" y2="259.08" width="0.508" layer="97"/>
+<wire x1="205.74" y1="259.08" x2="205.74" y2="162.56" width="0.508" layer="97"/>
+<wire x1="205.74" y1="162.56" x2="81.28" y2="162.56" width="0.508" layer="97"/>
+<text x="83.82" y="165.1" size="5.08" layer="97">FPGA IO</text>
+<text x="82.55" y="193.04" size="5.08" layer="97">HV</text>
+<text x="83.82" y="231.14" size="5.08" layer="97">LV</text>
+<wire x1="96.52" y1="185.42" x2="93.98" y2="185.42" width="0.508" layer="97"/>
+<wire x1="93.98" y1="185.42" x2="93.98" y2="213.36" width="0.508" layer="97"/>
+<wire x1="93.98" y1="213.36" x2="96.52" y2="213.36" width="0.508" layer="97"/>
+<wire x1="93.98" y1="213.36" x2="93.98" y2="251.46" width="0.508" layer="97"/>
+<wire x1="93.98" y1="251.46" x2="96.52" y2="251.46" width="0.508" layer="97"/>
+<text x="193.04" y="220.98" size="5.08" layer="97">HV</text>
+<text x="193.04" y="241.3" size="5.08" layer="97">LV</text>
+<wire x1="187.96" y1="210.82" x2="190.5" y2="210.82" width="0.508" layer="97"/>
+<wire x1="190.5" y1="210.82" x2="190.5" y2="233.68" width="0.508" layer="97"/>
+<wire x1="190.5" y1="233.68" x2="187.96" y2="233.68" width="0.508" layer="97"/>
+<wire x1="187.96" y1="236.22" x2="190.5" y2="236.22" width="0.508" layer="97"/>
+<wire x1="190.5" y1="236.22" x2="190.5" y2="251.46" width="0.508" layer="97"/>
+<wire x1="190.5" y1="251.46" x2="187.96" y2="251.46" width="0.508" layer="97"/>
+<text x="140.97" y="237.49" size="2.54" layer="97">HV</text>
+<wire x1="146.05" y1="238.76" x2="152.4" y2="238.76" width="0.508" layer="97"/>
 </plain>
 <instances>
 <instance part="IC4" gate="G$1" x="33.02" y="73.66" smashed="yes">
@@ -3512,19 +3534,19 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <attribute name="VALUE" x="250.19" y="41.275" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY59" gate="GND" x="248.92" y="38.1" smashed="yes"/>
-<instance part="SUPPLY60" gate="GND" x="170.18" y="233.68" smashed="yes" rot="R90"/>
-<instance part="SUPPLY63" gate="GND" x="147.32" y="233.68" smashed="yes" rot="R270"/>
-<instance part="CON1" gate="G$1" x="157.48" y="198.12" smashed="yes">
-<attribute name="NAME" x="151.13" y="236.855" size="1.778" layer="95"/>
-<attribute name="VALUE" x="151.13" y="154.94" size="1.778" layer="96"/>
+<instance part="SUPPLY60" gate="GND" x="127" y="251.46" smashed="yes" rot="R90"/>
+<instance part="SUPPLY63" gate="GND" x="104.14" y="251.46" smashed="yes" rot="R270"/>
+<instance part="CON1" gate="G$1" x="114.3" y="215.9" smashed="yes">
+<attribute name="NAME" x="107.95" y="254.635" size="1.778" layer="95"/>
+<attribute name="VALUE" x="107.95" y="172.72" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY34" gate="GND" x="147.32" y="195.58" smashed="yes" rot="R270"/>
-<instance part="SUPPLY39" gate="GND" x="170.18" y="195.58" smashed="yes" rot="R90"/>
-<instance part="SUPPLY40" gate="GND" x="193.04" y="233.68" smashed="yes" rot="R270"/>
-<instance part="SUPPLY64" gate="GND" x="215.9" y="233.68" smashed="yes" rot="R90"/>
-<instance part="SUPPLY65" gate="GND" x="215.9" y="218.44" smashed="yes" rot="R90"/>
-<instance part="SUPPLY66" gate="GND" x="215.9" y="215.9" smashed="yes" rot="R90"/>
-<instance part="SUPPLY67" gate="GND" x="193.04" y="215.9" smashed="yes" rot="R270"/>
+<instance part="SUPPLY34" gate="GND" x="104.14" y="213.36" smashed="yes" rot="R270"/>
+<instance part="SUPPLY39" gate="GND" x="127" y="213.36" smashed="yes" rot="R90"/>
+<instance part="SUPPLY40" gate="GND" x="157.48" y="251.46" smashed="yes" rot="R270"/>
+<instance part="SUPPLY64" gate="GND" x="180.34" y="251.46" smashed="yes" rot="R90"/>
+<instance part="SUPPLY65" gate="GND" x="180.34" y="236.22" smashed="yes" rot="R90"/>
+<instance part="SUPPLY66" gate="GND" x="180.34" y="233.68" smashed="yes" rot="R90"/>
+<instance part="SUPPLY67" gate="GND" x="157.48" y="233.68" smashed="yes" rot="R270"/>
 <instance part="+1V8" gate="G$1" x="165.1" y="43.18" smashed="yes">
 <attribute name="VALUE" x="162.56" y="43.18" size="1.778" layer="96"/>
 </instance>
@@ -3558,27 +3580,27 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="+3V4" gate="G$1" x="180.34" y="152.4" smashed="yes">
 <attribute name="VALUE" x="177.8" y="152.4" size="1.778" layer="96"/>
 </instance>
-<instance part="CON2" gate="G$1" x="203.2" y="198.12" smashed="yes">
-<attribute name="NAME" x="196.85" y="236.855" size="1.778" layer="95"/>
-<attribute name="VALUE" x="196.85" y="154.94" size="1.778" layer="96"/>
+<instance part="CON2" gate="G$1" x="167.64" y="215.9" smashed="yes">
+<attribute name="NAME" x="161.29" y="254.635" size="1.778" layer="95"/>
+<attribute name="VALUE" x="161.29" y="172.72" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY2" gate="GND" x="147.32" y="167.64" smashed="yes" rot="R270"/>
-<instance part="SUPPLY15" gate="GND" x="170.18" y="167.64" smashed="yes" rot="R90"/>
-<instance part="SUPPLY41" gate="GND" x="170.18" y="170.18" smashed="yes" rot="R90"/>
-<instance part="+3V5" gate="G$1" x="147.32" y="160.02" smashed="yes" rot="R90">
-<attribute name="VALUE" x="140.97" y="158.75" size="1.778" layer="96"/>
+<instance part="SUPPLY2" gate="GND" x="104.14" y="185.42" smashed="yes" rot="R270"/>
+<instance part="SUPPLY15" gate="GND" x="127" y="185.42" smashed="yes" rot="R90"/>
+<instance part="SUPPLY41" gate="GND" x="127" y="187.96" smashed="yes" rot="R90"/>
+<instance part="+3V5" gate="G$1" x="104.14" y="177.8" smashed="yes" rot="R90">
+<attribute name="VALUE" x="97.79" y="176.53" size="1.778" layer="96"/>
 </instance>
-<instance part="+3V6" gate="G$1" x="170.18" y="160.02" smashed="yes" rot="R270">
-<attribute name="VALUE" x="171.45" y="158.75" size="1.778" layer="96"/>
+<instance part="+3V6" gate="G$1" x="127" y="177.8" smashed="yes" rot="R270">
+<attribute name="VALUE" x="128.27" y="176.53" size="1.778" layer="96"/>
 </instance>
-<instance part="+1V5" gate="G$1" x="147.32" y="165.1" smashed="yes" rot="R90">
-<attribute name="VALUE" x="140.97" y="163.83" size="1.778" layer="96"/>
+<instance part="+1V5" gate="G$1" x="104.14" y="182.88" smashed="yes" rot="R90">
+<attribute name="VALUE" x="97.79" y="181.61" size="1.778" layer="96"/>
 </instance>
-<instance part="+1V6" gate="G$1" x="170.18" y="165.1" smashed="yes" rot="R270">
-<attribute name="VALUE" x="171.45" y="163.83" size="1.778" layer="96"/>
+<instance part="+1V6" gate="G$1" x="127" y="182.88" smashed="yes" rot="R270">
+<attribute name="VALUE" x="128.27" y="181.61" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY42" gate="GND" x="147.32" y="162.56" smashed="yes" rot="R270"/>
-<instance part="SUPPLY43" gate="GND" x="170.18" y="162.56" smashed="yes" rot="R90"/>
+<instance part="SUPPLY42" gate="GND" x="104.14" y="180.34" smashed="yes" rot="R270"/>
+<instance part="SUPPLY43" gate="GND" x="127" y="180.34" smashed="yes" rot="R90"/>
 <instance part="C34" gate="G$1" x="472.44" y="177.8" smashed="yes">
 <attribute name="NAME" x="473.71" y="178.435" size="1.778" layer="95"/>
 <attribute name="VALUE" x="473.71" y="175.895" size="1.778" layer="96"/>
@@ -3701,46 +3723,46 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="+1V11" gate="G$1" x="264.16" y="195.58" smashed="yes">
 <attribute name="VALUE" x="261.62" y="195.58" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY9" gate="GND" x="193.04" y="165.1" smashed="yes" rot="R270"/>
-<instance part="SUPPLY10" gate="GND" x="193.04" y="167.64" smashed="yes" rot="R270"/>
-<instance part="+3V15" gate="G$1" x="193.04" y="170.18" smashed="yes" rot="R90">
-<attribute name="VALUE" x="186.69" y="168.91" size="1.778" layer="96"/>
+<instance part="SUPPLY9" gate="GND" x="157.48" y="182.88" smashed="yes" rot="R270"/>
+<instance part="SUPPLY10" gate="GND" x="157.48" y="185.42" smashed="yes" rot="R270"/>
+<instance part="+3V15" gate="G$1" x="157.48" y="187.96" smashed="yes" rot="R90">
+<attribute name="VALUE" x="151.13" y="186.69" size="1.778" layer="96"/>
 </instance>
-<instance part="+3V16" gate="G$1" x="193.04" y="172.72" smashed="yes" rot="R90">
-<attribute name="VALUE" x="186.69" y="171.45" size="1.778" layer="96"/>
+<instance part="+3V16" gate="G$1" x="157.48" y="190.5" smashed="yes" rot="R90">
+<attribute name="VALUE" x="151.13" y="189.23" size="1.778" layer="96"/>
 </instance>
-<instance part="+1V12" gate="G$1" x="193.04" y="175.26" smashed="yes" rot="R90">
-<attribute name="VALUE" x="186.69" y="173.99" size="1.778" layer="96"/>
+<instance part="+1V12" gate="G$1" x="157.48" y="193.04" smashed="yes" rot="R90">
+<attribute name="VALUE" x="151.13" y="191.77" size="1.778" layer="96"/>
 </instance>
-<instance part="+1V13" gate="G$1" x="193.04" y="177.8" smashed="yes" rot="R90">
-<attribute name="VALUE" x="186.69" y="176.53" size="1.778" layer="96"/>
+<instance part="+1V13" gate="G$1" x="157.48" y="195.58" smashed="yes" rot="R90">
+<attribute name="VALUE" x="151.13" y="194.31" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY13" gate="GND" x="215.9" y="165.1" smashed="yes" rot="R90"/>
-<instance part="SUPPLY14" gate="GND" x="215.9" y="167.64" smashed="yes" rot="R90"/>
-<instance part="+3V17" gate="G$1" x="215.9" y="170.18" smashed="yes" rot="R270">
-<attribute name="VALUE" x="217.17" y="168.91" size="1.778" layer="96"/>
+<instance part="SUPPLY13" gate="GND" x="180.34" y="182.88" smashed="yes" rot="R90"/>
+<instance part="SUPPLY14" gate="GND" x="180.34" y="185.42" smashed="yes" rot="R90"/>
+<instance part="+3V17" gate="G$1" x="180.34" y="187.96" smashed="yes" rot="R270">
+<attribute name="VALUE" x="181.61" y="186.69" size="1.778" layer="96"/>
 </instance>
-<instance part="+3V18" gate="G$1" x="215.9" y="172.72" smashed="yes" rot="R270">
-<attribute name="VALUE" x="217.17" y="171.45" size="1.778" layer="96"/>
+<instance part="+3V18" gate="G$1" x="180.34" y="190.5" smashed="yes" rot="R270">
+<attribute name="VALUE" x="181.61" y="189.23" size="1.778" layer="96"/>
 </instance>
-<instance part="+1V14" gate="G$1" x="215.9" y="175.26" smashed="yes" rot="R270">
-<attribute name="VALUE" x="217.17" y="173.99" size="1.778" layer="96"/>
+<instance part="+1V14" gate="G$1" x="180.34" y="193.04" smashed="yes" rot="R270">
+<attribute name="VALUE" x="181.61" y="191.77" size="1.778" layer="96"/>
 </instance>
-<instance part="+1V15" gate="G$1" x="215.9" y="177.8" smashed="yes" rot="R270">
-<attribute name="VALUE" x="217.17" y="176.53" size="1.778" layer="96"/>
+<instance part="+1V15" gate="G$1" x="180.34" y="195.58" smashed="yes" rot="R270">
+<attribute name="VALUE" x="181.61" y="194.31" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY16" gate="GND" x="193.04" y="193.04" smashed="yes" rot="R270"/>
-<instance part="SUPPLY17" gate="GND" x="215.9" y="193.04" smashed="yes" rot="R90"/>
-<instance part="SUPPLY74" gate="GND" x="193.04" y="180.34" smashed="yes" rot="R270"/>
-<instance part="SUPPLY75" gate="GND" x="193.04" y="182.88" smashed="yes" rot="R270"/>
-<instance part="SUPPLY76" gate="GND" x="193.04" y="185.42" smashed="yes" rot="R270"/>
-<instance part="SUPPLY77" gate="GND" x="193.04" y="187.96" smashed="yes" rot="R270"/>
-<instance part="SUPPLY78" gate="GND" x="193.04" y="190.5" smashed="yes" rot="R270"/>
-<instance part="SUPPLY79" gate="GND" x="215.9" y="190.5" smashed="yes" rot="R90"/>
-<instance part="SUPPLY80" gate="GND" x="215.9" y="187.96" smashed="yes" rot="R90"/>
-<instance part="SUPPLY81" gate="GND" x="215.9" y="185.42" smashed="yes" rot="R90"/>
-<instance part="SUPPLY82" gate="GND" x="215.9" y="182.88" smashed="yes" rot="R90"/>
-<instance part="SUPPLY83" gate="GND" x="215.9" y="180.34" smashed="yes" rot="R90"/>
+<instance part="SUPPLY16" gate="GND" x="157.48" y="210.82" smashed="yes" rot="R270"/>
+<instance part="SUPPLY17" gate="GND" x="180.34" y="210.82" smashed="yes" rot="R90"/>
+<instance part="SUPPLY74" gate="GND" x="157.48" y="198.12" smashed="yes" rot="R270"/>
+<instance part="SUPPLY75" gate="GND" x="157.48" y="200.66" smashed="yes" rot="R270"/>
+<instance part="SUPPLY76" gate="GND" x="157.48" y="203.2" smashed="yes" rot="R270"/>
+<instance part="SUPPLY77" gate="GND" x="157.48" y="205.74" smashed="yes" rot="R270"/>
+<instance part="SUPPLY78" gate="GND" x="157.48" y="208.28" smashed="yes" rot="R270"/>
+<instance part="SUPPLY79" gate="GND" x="180.34" y="208.28" smashed="yes" rot="R90"/>
+<instance part="SUPPLY80" gate="GND" x="180.34" y="205.74" smashed="yes" rot="R90"/>
+<instance part="SUPPLY81" gate="GND" x="180.34" y="203.2" smashed="yes" rot="R90"/>
+<instance part="SUPPLY82" gate="GND" x="180.34" y="200.66" smashed="yes" rot="R90"/>
+<instance part="SUPPLY83" gate="GND" x="180.34" y="198.12" smashed="yes" rot="R90"/>
 <instance part="C3" gate="G$1" x="-12.7" y="162.56" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-13.97" y="163.195" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="-13.97" y="160.655" size="1.778" layer="96" rot="MR0"/>
@@ -3765,25 +3787,25 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <attribute name="VALUE" x="-34.29" y="160.655" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="SUPPLY87" gate="GND" x="-33.02" y="157.48" smashed="yes"/>
-<instance part="X1" gate="G$1" x="91.44" y="223.52" smashed="yes">
-<attribute name="NAME" x="85.09" y="229.87" size="1.778" layer="95"/>
-<attribute name="VALUE" x="85.09" y="215.9" size="1.778" layer="96"/>
+<instance part="X1" gate="G$1" x="91.44" y="101.6" smashed="yes">
+<attribute name="NAME" x="85.09" y="107.95" size="1.778" layer="95"/>
+<attribute name="VALUE" x="85.09" y="93.98" size="1.778" layer="96"/>
 </instance>
-<instance part="C19" gate="G$1" x="76.2" y="223.52" smashed="yes" rot="MR0">
-<attribute name="NAME" x="74.93" y="224.155" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="74.93" y="221.615" size="1.778" layer="96" rot="MR0"/>
+<instance part="C19" gate="G$1" x="76.2" y="101.6" smashed="yes" rot="MR0">
+<attribute name="NAME" x="74.93" y="102.235" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="74.93" y="99.695" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="SUPPLY88" gate="GND" x="78.74" y="218.44" smashed="yes"/>
-<instance part="SUPPLY89" gate="GND" x="76.2" y="218.44" smashed="yes"/>
-<instance part="+3V19" gate="G$1" x="76.2" y="231.14" smashed="yes">
-<attribute name="VALUE" x="73.66" y="231.14" size="1.778" layer="96"/>
+<instance part="SUPPLY88" gate="GND" x="78.74" y="96.52" smashed="yes"/>
+<instance part="SUPPLY89" gate="GND" x="76.2" y="96.52" smashed="yes"/>
+<instance part="+3V19" gate="G$1" x="76.2" y="109.22" smashed="yes">
+<attribute name="VALUE" x="73.66" y="109.22" size="1.778" layer="96"/>
 </instance>
-<instance part="J1" gate="G$1" x="109.22" y="220.98" smashed="yes">
-<attribute name="NAME" x="106.68" y="223.52" size="1.778" layer="95"/>
-<attribute name="VALUE" x="106.68" y="217.17" size="1.778" layer="96"/>
+<instance part="J1" gate="G$1" x="109.22" y="99.06" smashed="yes">
+<attribute name="NAME" x="106.68" y="101.6" size="1.778" layer="95"/>
+<attribute name="VALUE" x="106.68" y="95.25" size="1.778" layer="96"/>
 </instance>
-<instance part="+3V20" gate="G$1" x="104.14" y="228.6" smashed="yes">
-<attribute name="VALUE" x="101.6" y="228.6" size="1.778" layer="96"/>
+<instance part="+3V20" gate="G$1" x="104.14" y="106.68" smashed="yes">
+<attribute name="VALUE" x="101.6" y="106.68" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -3945,73 +3967,73 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="31"/>
-<wire x1="154.94" y1="195.58" x2="149.86" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="213.36" x2="106.68" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="SUPPLY34" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="32"/>
-<wire x1="162.56" y1="195.58" x2="167.64" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="213.36" x2="124.46" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="SUPPLY39" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="SUPPLY40" gate="GND" pin="GND"/>
-<wire x1="200.66" y1="233.68" x2="195.58" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="251.46" x2="160.02" y2="251.46" width="0.1524" layer="91"/>
 <pinref part="CON2" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="SUPPLY64" gate="GND" pin="GND"/>
-<wire x1="208.28" y1="233.68" x2="213.36" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="251.46" x2="177.8" y2="251.46" width="0.1524" layer="91"/>
 <pinref part="CON2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="SUPPLY67" gate="GND" pin="GND"/>
-<wire x1="195.58" y1="215.9" x2="200.66" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="233.68" x2="165.1" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="CON2" gate="G$1" pin="15"/>
 </segment>
 <segment>
 <pinref part="SUPPLY66" gate="GND" pin="GND"/>
-<wire x1="213.36" y1="215.9" x2="208.28" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="233.68" x2="172.72" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="CON2" gate="G$1" pin="16"/>
 </segment>
 <segment>
 <pinref part="SUPPLY65" gate="GND" pin="GND"/>
-<wire x1="213.36" y1="218.44" x2="208.28" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="236.22" x2="172.72" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="CON2" gate="G$1" pin="14"/>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY63" gate="GND" pin="GND"/>
-<wire x1="149.86" y1="233.68" x2="154.94" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="251.46" x2="111.76" y2="251.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY60" gate="GND" pin="GND"/>
-<wire x1="167.64" y1="233.68" x2="162.56" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="251.46" x2="119.38" y2="251.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="53"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
-<wire x1="149.86" y1="167.64" x2="154.94" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="185.42" x2="111.76" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="54"/>
 <pinref part="SUPPLY15" gate="GND" pin="GND"/>
-<wire x1="167.64" y1="167.64" x2="162.56" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="185.42" x2="119.38" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="52"/>
 <pinref part="SUPPLY41" gate="GND" pin="GND"/>
-<wire x1="167.64" y1="170.18" x2="162.56" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="187.96" x2="119.38" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="57"/>
 <pinref part="SUPPLY42" gate="GND" pin="GND"/>
-<wire x1="149.86" y1="162.56" x2="154.94" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="180.34" x2="111.76" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="58"/>
 <pinref part="SUPPLY43" gate="GND" pin="GND"/>
-<wire x1="167.64" y1="162.56" x2="162.56" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="180.34" x2="119.38" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C34" gate="G$1" pin="2"/>
@@ -4080,82 +4102,82 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <segment>
 <pinref part="CON2" gate="G$1" pin="55"/>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
-<wire x1="195.58" y1="165.1" x2="200.66" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="182.88" x2="165.1" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="53"/>
 <pinref part="SUPPLY10" gate="GND" pin="GND"/>
-<wire x1="195.58" y1="167.64" x2="200.66" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="185.42" x2="165.1" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="56"/>
 <pinref part="SUPPLY13" gate="GND" pin="GND"/>
-<wire x1="213.36" y1="165.1" x2="208.28" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="182.88" x2="172.72" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="54"/>
 <pinref part="SUPPLY14" gate="GND" pin="GND"/>
-<wire x1="213.36" y1="167.64" x2="208.28" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="185.42" x2="172.72" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="33"/>
 <pinref part="SUPPLY16" gate="GND" pin="GND"/>
-<wire x1="195.58" y1="193.04" x2="200.66" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="210.82" x2="165.1" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="34"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
-<wire x1="213.36" y1="193.04" x2="208.28" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="210.82" x2="172.72" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="43"/>
 <pinref part="SUPPLY74" gate="GND" pin="GND"/>
-<wire x1="195.58" y1="180.34" x2="200.66" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="198.12" x2="165.1" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="41"/>
 <pinref part="SUPPLY75" gate="GND" pin="GND"/>
-<wire x1="195.58" y1="182.88" x2="200.66" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="200.66" x2="165.1" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="39"/>
 <pinref part="SUPPLY76" gate="GND" pin="GND"/>
-<wire x1="195.58" y1="185.42" x2="200.66" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="203.2" x2="165.1" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="37"/>
 <pinref part="SUPPLY77" gate="GND" pin="GND"/>
-<wire x1="195.58" y1="187.96" x2="200.66" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="205.74" x2="165.1" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="35"/>
 <pinref part="SUPPLY78" gate="GND" pin="GND"/>
-<wire x1="195.58" y1="190.5" x2="200.66" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="208.28" x2="165.1" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="36"/>
 <pinref part="SUPPLY79" gate="GND" pin="GND"/>
-<wire x1="213.36" y1="190.5" x2="208.28" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="208.28" x2="172.72" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="38"/>
 <pinref part="SUPPLY80" gate="GND" pin="GND"/>
-<wire x1="213.36" y1="187.96" x2="208.28" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="205.74" x2="172.72" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="40"/>
 <pinref part="SUPPLY81" gate="GND" pin="GND"/>
-<wire x1="213.36" y1="185.42" x2="208.28" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="203.2" x2="172.72" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="42"/>
 <pinref part="SUPPLY82" gate="GND" pin="GND"/>
-<wire x1="213.36" y1="182.88" x2="208.28" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="200.66" x2="172.72" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="44"/>
 <pinref part="SUPPLY83" gate="GND" pin="GND"/>
-<wire x1="213.36" y1="180.34" x2="208.28" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="198.12" x2="172.72" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -4259,12 +4281,12 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <segment>
 <pinref part="CON1" gate="G$1" pin="55"/>
 <pinref part="+1V5" gate="G$1" pin="+1V8"/>
-<wire x1="149.86" y1="165.1" x2="154.94" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="182.88" x2="111.76" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="56"/>
 <pinref part="+1V6" gate="G$1" pin="+1V8"/>
-<wire x1="167.64" y1="165.1" x2="162.56" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="182.88" x2="119.38" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="EN"/>
@@ -4295,23 +4317,23 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="47"/>
-<wire x1="200.66" y1="175.26" x2="195.58" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="193.04" x2="160.02" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="+1V12" gate="G$1" pin="+1V8"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="45"/>
-<wire x1="200.66" y1="177.8" x2="195.58" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="195.58" x2="160.02" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="+1V13" gate="G$1" pin="+1V8"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="48"/>
 <pinref part="+1V14" gate="G$1" pin="+1V8"/>
-<wire x1="213.36" y1="175.26" x2="208.28" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="193.04" x2="172.72" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="46"/>
 <pinref part="+1V15" gate="G$1" pin="+1V8"/>
-<wire x1="213.36" y1="177.8" x2="208.28" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="195.58" x2="172.72" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+1V0" class="0">
@@ -4686,12 +4708,12 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <segment>
 <pinref part="CON1" gate="G$1" pin="59"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
-<wire x1="149.86" y1="160.02" x2="154.94" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="177.8" x2="111.76" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="60"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
-<wire x1="167.64" y1="160.02" x2="162.56" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="177.8" x2="119.38" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="1"/>
@@ -4723,30 +4745,30 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="51"/>
-<wire x1="200.66" y1="170.18" x2="195.58" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="187.96" x2="160.02" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="+3V15" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="49"/>
-<wire x1="200.66" y1="172.72" x2="195.58" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="190.5" x2="160.02" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="+3V16" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="52"/>
 <pinref part="+3V17" gate="G$1" pin="+3V3"/>
-<wire x1="213.36" y1="170.18" x2="208.28" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="187.96" x2="172.72" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="50"/>
 <pinref part="+3V18" gate="G$1" pin="+3V3"/>
-<wire x1="213.36" y1="172.72" x2="208.28" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="190.5" x2="172.72" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="VCC"/>
 <pinref part="C19" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="226.06" x2="76.2" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="228.6" x2="76.2" y2="226.06" width="0.1524" layer="91"/>
-<junction x="76.2" y="226.06"/>
+<wire x1="78.74" y1="104.14" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="106.68" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
+<junction x="76.2" y="104.14"/>
 <pinref part="+3V19" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
@@ -5276,7 +5298,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="276.86" y="175.26" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="IOH13" class="0">
+<net name="PR42B" class="0">
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR42B"/>
 <wire x1="127" y1="-15.24" x2="129.54" y2="-15.24" width="0.1524" layer="91"/>
@@ -5284,11 +5306,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="33"/>
-<wire x1="149.86" y1="193.04" x2="154.94" y2="193.04" width="0.1524" layer="91"/>
-<label x="149.86" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="106.68" y1="210.82" x2="111.76" y2="210.82" width="0.1524" layer="91"/>
+<label x="106.68" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IOH12" class="0">
+<net name="PR42A" class="0">
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR42A"/>
 <wire x1="127" y1="-12.7" x2="129.54" y2="-12.7" width="0.1524" layer="91"/>
@@ -5296,11 +5318,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="35"/>
-<wire x1="154.94" y1="190.5" x2="149.86" y2="190.5" width="0.1524" layer="91"/>
-<label x="149.86" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="208.28" x2="106.68" y2="208.28" width="0.1524" layer="91"/>
+<label x="106.68" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IOH5" class="0">
+<net name="PR38B" class="0">
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR38B"/>
 <wire x1="127" y1="-5.08" x2="129.54" y2="-5.08" width="0.1524" layer="91"/>
@@ -5308,11 +5330,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="36"/>
-<wire x1="162.56" y1="190.5" x2="167.64" y2="190.5" width="0.1524" layer="91"/>
-<label x="167.64" y="190.5" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="208.28" x2="124.46" y2="208.28" width="0.1524" layer="91"/>
+<label x="124.46" y="208.28" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IOH6" class="0">
+<net name="PR38A" class="0">
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR38A"/>
 <wire x1="127" y1="-2.54" x2="129.54" y2="-2.54" width="0.1524" layer="91"/>
@@ -5320,11 +5342,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="34"/>
-<wire x1="162.56" y1="193.04" x2="167.64" y2="193.04" width="0.1524" layer="91"/>
-<label x="167.64" y="193.04" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="210.82" x2="124.46" y2="210.82" width="0.1524" layer="91"/>
+<label x="124.46" y="210.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IOH18" class="0">
+<net name="PR36B" class="0">
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR36B"/>
 <wire x1="127" y1="0" x2="128.27" y2="0" width="0.1524" layer="91"/>
@@ -5333,11 +5355,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="42"/>
-<wire x1="162.56" y1="182.88" x2="167.64" y2="182.88" width="0.1524" layer="91"/>
-<label x="167.64" y="182.88" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="200.66" x2="124.46" y2="200.66" width="0.1524" layer="91"/>
+<label x="124.46" y="200.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IOH3" class="0">
+<net name="PR36A" class="0">
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR36A"/>
 <wire x1="127" y1="2.54" x2="128.27" y2="2.54" width="0.1524" layer="91"/>
@@ -5346,11 +5368,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="44"/>
-<wire x1="162.56" y1="180.34" x2="167.64" y2="180.34" width="0.1524" layer="91"/>
-<label x="167.64" y="180.34" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="198.12" x2="124.46" y2="198.12" width="0.1524" layer="91"/>
+<label x="124.46" y="198.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IOH4" class="0">
+<net name="PR34B" class="0">
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR34B"/>
 <wire x1="127" y1="5.08" x2="129.54" y2="5.08" width="0.1524" layer="91"/>
@@ -5358,11 +5380,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="38"/>
-<wire x1="162.56" y1="187.96" x2="167.64" y2="187.96" width="0.1524" layer="91"/>
-<label x="167.64" y="187.96" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="205.74" x2="124.46" y2="205.74" width="0.1524" layer="91"/>
+<label x="124.46" y="205.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IOH17" class="0">
+<net name="PR34A" class="0">
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR34A"/>
 <wire x1="127" y1="7.62" x2="129.54" y2="7.62" width="0.1524" layer="91"/>
@@ -5370,11 +5392,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="40"/>
-<wire x1="162.56" y1="185.42" x2="167.64" y2="185.42" width="0.1524" layer="91"/>
-<label x="167.64" y="185.42" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="203.2" x2="124.46" y2="203.2" width="0.1524" layer="91"/>
+<label x="124.46" y="203.2" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IOH11" class="0">
+<net name="PR32B" class="0">
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR32B"/>
 <wire x1="127" y1="10.16" x2="129.54" y2="10.16" width="0.1524" layer="91"/>
@@ -5382,11 +5404,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="37"/>
-<wire x1="154.94" y1="187.96" x2="149.86" y2="187.96" width="0.1524" layer="91"/>
-<label x="149.86" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="205.74" x2="106.68" y2="205.74" width="0.1524" layer="91"/>
+<label x="106.68" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IOH8" class="0">
+<net name="PR32A" class="0">
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR32A"/>
 <wire x1="127" y1="12.7" x2="129.54" y2="12.7" width="0.1524" layer="91"/>
@@ -5394,11 +5416,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="43"/>
-<wire x1="154.94" y1="180.34" x2="149.86" y2="180.34" width="0.1524" layer="91"/>
-<label x="149.86" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="198.12" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
+<label x="106.68" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IOH9" class="0">
+<net name="PR30B" class="0">
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR30B"/>
 <wire x1="127" y1="15.24" x2="129.54" y2="15.24" width="0.1524" layer="91"/>
@@ -5406,11 +5428,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="41"/>
-<wire x1="154.94" y1="182.88" x2="149.86" y2="182.88" width="0.1524" layer="91"/>
-<label x="149.86" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="200.66" x2="106.68" y2="200.66" width="0.1524" layer="91"/>
+<label x="106.68" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IOH7" class="0">
+<net name="PR30A" class="0">
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR30A"/>
 <wire x1="127" y1="17.78" x2="128.27" y2="17.78" width="0.1524" layer="91"/>
@@ -5419,11 +5441,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="45"/>
-<wire x1="154.94" y1="177.8" x2="149.86" y2="177.8" width="0.1524" layer="91"/>
-<label x="149.86" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="195.58" x2="106.68" y2="195.58" width="0.1524" layer="91"/>
+<label x="106.68" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IOH10" class="0">
+<net name="PR27B" class="0">
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR27B"/>
 <wire x1="127" y1="20.32" x2="128.27" y2="20.32" width="0.1524" layer="91"/>
@@ -5432,11 +5454,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="39"/>
-<wire x1="154.94" y1="185.42" x2="149.86" y2="185.42" width="0.1524" layer="91"/>
-<label x="149.86" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="203.2" x2="106.68" y2="203.2" width="0.1524" layer="91"/>
+<label x="106.68" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IOH1" class="0">
+<net name="PR27A" class="0">
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR27A"/>
 <wire x1="127" y1="22.86" x2="129.54" y2="22.86" width="0.1524" layer="91"/>
@@ -5444,11 +5466,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="48"/>
-<wire x1="162.56" y1="175.26" x2="167.64" y2="175.26" width="0.1524" layer="91"/>
-<label x="167.64" y="175.26" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="193.04" x2="124.46" y2="193.04" width="0.1524" layer="91"/>
+<label x="124.46" y="193.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IOH0" class="0">
+<net name="PR24B" class="0">
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR24B"/>
 <wire x1="127" y1="30.48" x2="129.54" y2="30.48" width="0.1524" layer="91"/>
@@ -5456,11 +5478,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="50"/>
-<wire x1="162.56" y1="172.72" x2="167.64" y2="172.72" width="0.1524" layer="91"/>
-<label x="167.64" y="172.72" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="190.5" x2="124.46" y2="190.5" width="0.1524" layer="91"/>
+<label x="124.46" y="190.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IOH2" class="0">
+<net name="PR24A" class="0">
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR24A"/>
 <wire x1="127" y1="33.02" x2="129.54" y2="33.02" width="0.1524" layer="91"/>
@@ -5468,11 +5490,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="46"/>
-<wire x1="162.56" y1="177.8" x2="167.64" y2="177.8" width="0.1524" layer="91"/>
-<label x="167.64" y="177.8" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="195.58" x2="124.46" y2="195.58" width="0.1524" layer="91"/>
+<label x="124.46" y="195.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IOH16" class="0">
+<net name="PR17A" class="0">
 <segment>
 <pinref part="IC4" gate="G$3" pin="PR17A"/>
 <wire x1="86.36" y1="-2.54" x2="88.9" y2="-2.54" width="0.1524" layer="91"/>
@@ -5480,11 +5502,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="49"/>
-<wire x1="154.94" y1="172.72" x2="149.86" y2="172.72" width="0.1524" layer="91"/>
-<label x="149.86" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="190.5" x2="106.68" y2="190.5" width="0.1524" layer="91"/>
+<label x="106.68" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IOH15" class="0">
+<net name="PR13B" class="0">
 <segment>
 <pinref part="IC4" gate="G$3" pin="PR13B"/>
 <wire x1="86.36" y1="0" x2="88.9" y2="0" width="0.1524" layer="91"/>
@@ -5492,155 +5514,155 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="51"/>
-<wire x1="154.94" y1="170.18" x2="149.86" y2="170.18" width="0.1524" layer="91"/>
-<label x="149.86" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="187.96" x2="106.68" y2="187.96" width="0.1524" layer="91"/>
+<label x="106.68" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IOL25" class="0">
+<net name="PB58A" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB58A"/>
 <wire x1="162.56" y1="22.86" x2="165.1" y2="22.86" width="0.1524" layer="91"/>
 <label x="165.1" y="22.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="231.14" x2="149.86" y2="231.14" width="0.1524" layer="91"/>
-<label x="149.86" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="248.92" x2="106.68" y2="248.92" width="0.1524" layer="91"/>
+<label x="106.68" y="248.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="3"/>
 </segment>
 </net>
-<net name="IOL24" class="0">
+<net name="PB58B" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB58B"/>
 <wire x1="162.56" y1="20.32" x2="165.1" y2="20.32" width="0.1524" layer="91"/>
 <label x="165.1" y="20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="228.6" x2="149.86" y2="228.6" width="0.1524" layer="91"/>
-<label x="149.86" y="228.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="246.38" x2="106.68" y2="246.38" width="0.1524" layer="91"/>
+<label x="106.68" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="5"/>
 </segment>
 </net>
-<net name="IOL23" class="0">
+<net name="PB60A" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB60A"/>
 <wire x1="162.56" y1="17.78" x2="165.1" y2="17.78" width="0.1524" layer="91"/>
 <label x="165.1" y="17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="226.06" x2="149.86" y2="226.06" width="0.1524" layer="91"/>
-<label x="149.86" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="243.84" x2="106.68" y2="243.84" width="0.1524" layer="91"/>
+<label x="106.68" y="243.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="7"/>
 </segment>
 </net>
-<net name="IOL22" class="0">
+<net name="PB60B" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB60B"/>
 <wire x1="162.56" y1="15.24" x2="165.1" y2="15.24" width="0.1524" layer="91"/>
 <label x="165.1" y="15.24" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="223.52" x2="149.86" y2="223.52" width="0.1524" layer="91"/>
-<label x="149.86" y="223.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="241.3" x2="106.68" y2="241.3" width="0.1524" layer="91"/>
+<label x="106.68" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="9"/>
 </segment>
 </net>
-<net name="IOL17" class="0">
+<net name="PB64A" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB64A"/>
 <wire x1="162.56" y1="7.62" x2="165.1" y2="7.62" width="0.1524" layer="91"/>
 <label x="165.1" y="7.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="213.36" x2="149.86" y2="213.36" width="0.1524" layer="91"/>
-<label x="149.86" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="231.14" x2="106.68" y2="231.14" width="0.1524" layer="91"/>
+<label x="106.68" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="17"/>
 </segment>
 </net>
-<net name="IOL15" class="0">
+<net name="PB64B" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB64B"/>
 <wire x1="162.56" y1="5.08" x2="165.1" y2="5.08" width="0.1524" layer="91"/>
 <label x="165.1" y="5.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="208.28" x2="149.86" y2="208.28" width="0.1524" layer="91"/>
-<label x="149.86" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="226.06" x2="106.68" y2="226.06" width="0.1524" layer="91"/>
+<label x="106.68" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="21"/>
 </segment>
 </net>
-<net name="IOL18" class="0">
+<net name="PB68A" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB68A"/>
 <wire x1="162.56" y1="-2.54" x2="165.1" y2="-2.54" width="0.1524" layer="91"/>
 <label x="165.1" y="-2.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="215.9" x2="149.86" y2="215.9" width="0.1524" layer="91"/>
-<label x="149.86" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="233.68" x2="106.68" y2="233.68" width="0.1524" layer="91"/>
+<label x="106.68" y="233.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="15"/>
 </segment>
 </net>
-<net name="IOL16" class="0">
+<net name="PB68B" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB68B"/>
 <wire x1="162.56" y1="-5.08" x2="165.1" y2="-5.08" width="0.1524" layer="91"/>
 <label x="165.1" y="-5.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="210.82" x2="149.86" y2="210.82" width="0.1524" layer="91"/>
-<label x="149.86" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="228.6" x2="106.68" y2="228.6" width="0.1524" layer="91"/>
+<label x="106.68" y="228.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="19"/>
 </segment>
 </net>
-<net name="IOL13" class="0">
+<net name="PB70A" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB70A"/>
 <wire x1="162.56" y1="-7.62" x2="165.1" y2="-7.62" width="0.1524" layer="91"/>
 <label x="165.1" y="-7.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="203.2" x2="149.86" y2="203.2" width="0.1524" layer="91"/>
-<label x="149.86" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="220.98" x2="106.68" y2="220.98" width="0.1524" layer="91"/>
+<label x="106.68" y="220.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="25"/>
 </segment>
 </net>
-<net name="IOL14" class="0">
+<net name="PB70B" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB70B"/>
 <wire x1="162.56" y1="-10.16" x2="165.1" y2="-10.16" width="0.1524" layer="91"/>
 <label x="165.1" y="-10.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="205.74" x2="149.86" y2="205.74" width="0.1524" layer="91"/>
-<label x="149.86" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="223.52" x2="106.68" y2="223.52" width="0.1524" layer="91"/>
+<label x="106.68" y="223.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="23"/>
 </segment>
 </net>
-<net name="IOL21" class="0">
+<net name="PB72A" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB72A"/>
 <wire x1="162.56" y1="-12.7" x2="165.1" y2="-12.7" width="0.1524" layer="91"/>
 <label x="165.1" y="-12.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="220.98" x2="149.86" y2="220.98" width="0.1524" layer="91"/>
-<label x="149.86" y="220.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="238.76" x2="106.68" y2="238.76" width="0.1524" layer="91"/>
+<label x="106.68" y="238.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="11"/>
 </segment>
 </net>
-<net name="IOL19" class="0">
+<net name="PB72B" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB72B"/>
 <wire x1="162.56" y1="-15.24" x2="165.1" y2="-15.24" width="0.1524" layer="91"/>
 <label x="165.1" y="-15.24" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="218.44" x2="149.86" y2="218.44" width="0.1524" layer="91"/>
-<label x="149.86" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="236.22" x2="106.68" y2="236.22" width="0.1524" layer="91"/>
+<label x="106.68" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="13"/>
 </segment>
 </net>
-<net name="IOL20" class="0">
+<net name="PB74A" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB74A"/>
 <wire x1="162.56" y1="-17.78" x2="163.83" y2="-17.78" width="0.1524" layer="91"/>
@@ -5648,48 +5670,48 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="165.1" y="-17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="162.56" y1="231.14" x2="167.64" y2="231.14" width="0.1524" layer="91"/>
-<label x="167.64" y="231.14" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="248.92" x2="124.46" y2="248.92" width="0.1524" layer="91"/>
+<label x="124.46" y="248.92" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="4"/>
 </segment>
 </net>
-<net name="IOL10" class="0">
+<net name="PB74B" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB74B"/>
 <wire x1="162.56" y1="-20.32" x2="165.1" y2="-20.32" width="0.1524" layer="91"/>
 <label x="165.1" y="-20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="162.56" y1="228.6" x2="167.64" y2="228.6" width="0.1524" layer="91"/>
-<label x="167.64" y="228.6" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="246.38" x2="124.46" y2="246.38" width="0.1524" layer="91"/>
+<label x="124.46" y="246.38" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="6"/>
 </segment>
 </net>
-<net name="IOL9" class="0">
+<net name="PB76A" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB76A"/>
 <wire x1="162.56" y1="-22.86" x2="165.1" y2="-22.86" width="0.1524" layer="91"/>
 <label x="165.1" y="-22.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="162.56" y1="226.06" x2="167.64" y2="226.06" width="0.1524" layer="91"/>
-<label x="167.64" y="226.06" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="243.84" x2="124.46" y2="243.84" width="0.1524" layer="91"/>
+<label x="124.46" y="243.84" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="8"/>
 </segment>
 </net>
-<net name="IOL8" class="0">
+<net name="PB76B" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB76B"/>
 <wire x1="162.56" y1="-25.4" x2="165.1" y2="-25.4" width="0.1524" layer="91"/>
 <label x="165.1" y="-25.4" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="162.56" y1="223.52" x2="167.64" y2="223.52" width="0.1524" layer="91"/>
-<label x="167.64" y="223.52" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="241.3" x2="124.46" y2="241.3" width="0.1524" layer="91"/>
+<label x="124.46" y="241.3" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="10"/>
 </segment>
 </net>
-<net name="IOL6" class="0">
+<net name="PB78A" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB78A"/>
 <wire x1="162.56" y1="-27.94" x2="163.83" y2="-27.94" width="0.1524" layer="91"/>
@@ -5697,97 +5719,97 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="165.1" y="-27.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="162.56" y1="218.44" x2="167.64" y2="218.44" width="0.1524" layer="91"/>
-<label x="167.64" y="218.44" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="236.22" x2="124.46" y2="236.22" width="0.1524" layer="91"/>
+<label x="124.46" y="236.22" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="14"/>
 </segment>
 </net>
-<net name="IOL7" class="0">
+<net name="PB78B" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB78B"/>
 <wire x1="162.56" y1="-30.48" x2="165.1" y2="-30.48" width="0.1524" layer="91"/>
 <label x="165.1" y="-30.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="162.56" y1="220.98" x2="167.64" y2="220.98" width="0.1524" layer="91"/>
-<label x="167.64" y="220.98" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="238.76" x2="124.46" y2="238.76" width="0.1524" layer="91"/>
+<label x="124.46" y="238.76" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="12"/>
 </segment>
 </net>
-<net name="IOL5" class="0">
+<net name="PB80A" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB80A"/>
 <wire x1="162.56" y1="-33.02" x2="165.1" y2="-33.02" width="0.1524" layer="91"/>
 <label x="165.1" y="-33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="162.56" y1="215.9" x2="167.64" y2="215.9" width="0.1524" layer="91"/>
-<label x="167.64" y="215.9" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="233.68" x2="124.46" y2="233.68" width="0.1524" layer="91"/>
+<label x="124.46" y="233.68" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="16"/>
 </segment>
 </net>
-<net name="IOL4" class="0">
+<net name="PB80B" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB80B"/>
 <wire x1="162.56" y1="-35.56" x2="165.1" y2="-35.56" width="0.1524" layer="91"/>
 <label x="165.1" y="-35.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="163.83" y1="213.36" x2="162.56" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="163.83" y1="213.36" x2="167.64" y2="213.36" width="0.1524" layer="91"/>
-<label x="167.64" y="213.36" size="1.27" layer="95" xref="yes"/>
+<wire x1="120.65" y1="231.14" x2="119.38" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="120.65" y1="231.14" x2="124.46" y2="231.14" width="0.1524" layer="91"/>
+<label x="124.46" y="231.14" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="18"/>
 </segment>
 </net>
-<net name="IOL3" class="0">
+<net name="PB82A" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB82A"/>
 <wire x1="162.56" y1="-38.1" x2="165.1" y2="-38.1" width="0.1524" layer="91"/>
 <label x="165.1" y="-38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="162.56" y1="210.82" x2="167.64" y2="210.82" width="0.1524" layer="91"/>
-<label x="167.64" y="210.82" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="228.6" x2="124.46" y2="228.6" width="0.1524" layer="91"/>
+<label x="124.46" y="228.6" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="20"/>
 </segment>
 </net>
-<net name="IOL2" class="0">
+<net name="PB82B" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB82B"/>
 <wire x1="162.56" y1="-40.64" x2="165.1" y2="-40.64" width="0.1524" layer="91"/>
 <label x="165.1" y="-40.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="162.56" y1="208.28" x2="167.64" y2="208.28" width="0.1524" layer="91"/>
-<label x="167.64" y="208.28" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="226.06" x2="124.46" y2="226.06" width="0.1524" layer="91"/>
+<label x="124.46" y="226.06" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="22"/>
 </segment>
 </net>
-<net name="IOL0" class="0">
+<net name="PB84A" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB84A"/>
 <wire x1="162.56" y1="-43.18" x2="165.1" y2="-43.18" width="0.1524" layer="91"/>
 <label x="165.1" y="-43.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="162.56" y1="203.2" x2="167.64" y2="203.2" width="0.1524" layer="91"/>
-<label x="167.64" y="203.2" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="220.98" x2="124.46" y2="220.98" width="0.1524" layer="91"/>
+<label x="124.46" y="220.98" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="26"/>
 </segment>
 </net>
-<net name="IOL1" class="0">
+<net name="PB84B" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB84B"/>
 <wire x1="162.56" y1="-45.72" x2="165.1" y2="-45.72" width="0.1524" layer="91"/>
 <label x="165.1" y="-45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="162.56" y1="205.74" x2="167.64" y2="205.74" width="0.1524" layer="91"/>
-<label x="167.64" y="205.74" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="223.52" x2="124.46" y2="223.52" width="0.1524" layer="91"/>
+<label x="124.46" y="223.52" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="24"/>
 </segment>
 </net>
-<net name="IOL111" class="0">
+<net name="PB4A" class="0">
 <segment>
 <pinref part="IC4" gate="G$7" pin="PB4A"/>
 <wire x1="243.84" y1="33.02" x2="245.11" y2="33.02" width="0.1524" layer="91"/>
@@ -5795,282 +5817,282 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="246.38" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="218.44" x2="195.58" y2="218.44" width="0.1524" layer="91"/>
-<label x="195.58" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="236.22" x2="160.02" y2="236.22" width="0.1524" layer="91"/>
+<label x="160.02" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="13"/>
 </segment>
 </net>
-<net name="IOL107" class="0">
+<net name="PB4B" class="0">
 <segment>
 <pinref part="IC4" gate="G$7" pin="PB4B"/>
 <wire x1="243.84" y1="30.48" x2="246.38" y2="30.48" width="0.1524" layer="91"/>
 <label x="246.38" y="30.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="223.52" x2="195.58" y2="223.52" width="0.1524" layer="91"/>
-<label x="195.58" y="223.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="241.3" x2="160.02" y2="241.3" width="0.1524" layer="91"/>
+<label x="160.02" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="9"/>
 </segment>
 </net>
-<net name="IOL109" class="0">
+<net name="PB6A" class="0">
 <segment>
 <pinref part="IC4" gate="G$7" pin="PB6A"/>
 <wire x1="243.84" y1="27.94" x2="246.38" y2="27.94" width="0.1524" layer="91"/>
 <label x="246.38" y="27.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="208.28" y1="220.98" x2="213.36" y2="220.98" width="0.1524" layer="91"/>
-<label x="213.36" y="220.98" size="1.27" layer="95" xref="yes"/>
+<wire x1="172.72" y1="238.76" x2="177.8" y2="238.76" width="0.1524" layer="91"/>
+<label x="177.8" y="238.76" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="12"/>
 </segment>
 </net>
-<net name="IOL108" class="0">
+<net name="PB6B" class="0">
 <segment>
 <pinref part="IC4" gate="G$7" pin="PB6B"/>
 <wire x1="243.84" y1="25.4" x2="246.38" y2="25.4" width="0.1524" layer="91"/>
 <label x="246.38" y="25.4" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="208.28" y1="223.52" x2="213.36" y2="223.52" width="0.1524" layer="91"/>
-<label x="213.36" y="223.52" size="1.27" layer="95" xref="yes"/>
+<wire x1="172.72" y1="241.3" x2="177.8" y2="241.3" width="0.1524" layer="91"/>
+<label x="177.8" y="241.3" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="10"/>
 </segment>
 </net>
-<net name="IOL105" class="0">
+<net name="PB8A" class="0">
 <segment>
 <pinref part="IC4" gate="G$7" pin="PB8A"/>
 <wire x1="243.84" y1="22.86" x2="246.38" y2="22.86" width="0.1524" layer="91"/>
 <label x="246.38" y="22.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="228.6" x2="195.58" y2="228.6" width="0.1524" layer="91"/>
-<label x="195.58" y="228.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="246.38" x2="160.02" y2="246.38" width="0.1524" layer="91"/>
+<label x="160.02" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="5"/>
 </segment>
 </net>
-<net name="IOL103" class="0">
+<net name="PB8B" class="0">
 <segment>
 <pinref part="IC4" gate="G$7" pin="PB8B"/>
 <wire x1="243.84" y1="20.32" x2="246.38" y2="20.32" width="0.1524" layer="91"/>
 <label x="246.38" y="20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="208.28" y1="226.06" x2="213.36" y2="226.06" width="0.1524" layer="91"/>
-<label x="213.36" y="226.06" size="1.27" layer="95" xref="yes"/>
+<wire x1="172.72" y1="243.84" x2="177.8" y2="243.84" width="0.1524" layer="91"/>
+<label x="177.8" y="243.84" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="8"/>
 </segment>
 </net>
-<net name="IOL106" class="0">
+<net name="PB10A" class="0">
 <segment>
 <pinref part="IC4" gate="G$7" pin="PB10A"/>
 <wire x1="243.84" y1="17.78" x2="246.38" y2="17.78" width="0.1524" layer="91"/>
 <label x="246.38" y="17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="226.06" x2="195.58" y2="226.06" width="0.1524" layer="91"/>
-<label x="195.58" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="243.84" x2="160.02" y2="243.84" width="0.1524" layer="91"/>
+<label x="160.02" y="243.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="7"/>
 </segment>
 </net>
-<net name="IOL104" class="0">
+<net name="PB10B" class="0">
 <segment>
 <pinref part="IC4" gate="G$7" pin="PB10B"/>
 <wire x1="243.84" y1="15.24" x2="246.38" y2="15.24" width="0.1524" layer="91"/>
 <label x="246.38" y="15.24" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="231.14" x2="195.58" y2="231.14" width="0.1524" layer="91"/>
-<label x="195.58" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="248.92" x2="160.02" y2="248.92" width="0.1524" layer="91"/>
+<label x="160.02" y="248.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="3"/>
 </segment>
 </net>
-<net name="IOL102" class="0">
+<net name="PB12A" class="0">
 <segment>
 <pinref part="IC4" gate="G$7" pin="PB12A"/>
 <wire x1="243.84" y1="12.7" x2="246.38" y2="12.7" width="0.1524" layer="91"/>
 <label x="246.38" y="12.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="208.28" y1="228.6" x2="213.36" y2="228.6" width="0.1524" layer="91"/>
-<label x="213.36" y="228.6" size="1.27" layer="95" xref="yes"/>
+<wire x1="172.72" y1="246.38" x2="177.8" y2="246.38" width="0.1524" layer="91"/>
+<label x="177.8" y="246.38" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="6"/>
 </segment>
 </net>
-<net name="IOL101" class="0">
+<net name="PB12B" class="0">
 <segment>
 <pinref part="IC4" gate="G$7" pin="PB12B"/>
 <wire x1="243.84" y1="10.16" x2="246.38" y2="10.16" width="0.1524" layer="91"/>
 <label x="246.38" y="10.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="208.28" y1="231.14" x2="213.36" y2="231.14" width="0.1524" layer="91"/>
-<label x="213.36" y="231.14" size="1.27" layer="95" xref="yes"/>
+<wire x1="172.72" y1="248.92" x2="177.8" y2="248.92" width="0.1524" layer="91"/>
+<label x="177.8" y="248.92" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="4"/>
 </segment>
 </net>
-<net name="IOH105" class="0">
+<net name="PL26A" class="0">
 <segment>
 <pinref part="IC4" gate="G$8" pin="PL26A"/>
 <wire x1="284.48" y1="27.94" x2="287.02" y2="27.94" width="0.1524" layer="91"/>
 <label x="287.02" y="27.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="208.28" y1="200.66" x2="213.36" y2="200.66" width="0.1524" layer="91"/>
-<label x="213.36" y="200.66" size="1.27" layer="95" xref="yes"/>
+<wire x1="172.72" y1="218.44" x2="177.8" y2="218.44" width="0.1524" layer="91"/>
+<label x="177.8" y="218.44" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="28"/>
 </segment>
 </net>
-<net name="IOH104" class="0">
+<net name="PL26B" class="0">
 <segment>
 <pinref part="IC4" gate="G$8" pin="PL26B"/>
 <wire x1="284.48" y1="25.4" x2="287.02" y2="25.4" width="0.1524" layer="91"/>
 <label x="287.02" y="25.4" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="208.28" y1="203.2" x2="213.36" y2="203.2" width="0.1524" layer="91"/>
-<label x="213.36" y="203.2" size="1.27" layer="95" xref="yes"/>
+<wire x1="172.72" y1="220.98" x2="177.8" y2="220.98" width="0.1524" layer="91"/>
+<label x="177.8" y="220.98" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="26"/>
 </segment>
 </net>
-<net name="IOH112" class="0">
+<net name="PL30A" class="0">
 <segment>
 <pinref part="IC4" gate="G$8" pin="PL30A"/>
 <wire x1="284.48" y1="17.78" x2="287.02" y2="17.78" width="0.1524" layer="91"/>
 <label x="287.02" y="17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="198.12" x2="195.58" y2="198.12" width="0.1524" layer="91"/>
-<label x="195.58" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="215.9" x2="160.02" y2="215.9" width="0.1524" layer="91"/>
+<label x="160.02" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="29"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="220.98" x2="114.3" y2="220.98" width="0.1524" layer="91"/>
-<label x="114.3" y="220.98" size="1.27" layer="95" xref="yes"/>
+<wire x1="111.76" y1="99.06" x2="114.3" y2="99.06" width="0.1524" layer="91"/>
+<label x="114.3" y="99.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IOH113" class="0">
+<net name="PL30B" class="0">
 <segment>
 <pinref part="IC4" gate="G$8" pin="PL30B"/>
 <wire x1="284.48" y1="15.24" x2="287.02" y2="15.24" width="0.1524" layer="91"/>
 <label x="287.02" y="15.24" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="195.58" x2="195.58" y2="195.58" width="0.1524" layer="91"/>
-<label x="195.58" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="213.36" x2="160.02" y2="213.36" width="0.1524" layer="91"/>
+<label x="160.02" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="31"/>
 </segment>
 </net>
-<net name="IOH111" class="0">
+<net name="PL32A" class="0">
 <segment>
 <pinref part="IC4" gate="G$8" pin="PL32A"/>
 <wire x1="284.48" y1="12.7" x2="287.02" y2="12.7" width="0.1524" layer="91"/>
 <label x="287.02" y="12.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="200.66" x2="195.58" y2="200.66" width="0.1524" layer="91"/>
-<label x="195.58" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="218.44" x2="160.02" y2="218.44" width="0.1524" layer="91"/>
+<label x="160.02" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="27"/>
 </segment>
 </net>
-<net name="IOH110" class="0">
+<net name="PL32B" class="0">
 <segment>
 <pinref part="IC4" gate="G$8" pin="PL32B"/>
 <wire x1="284.48" y1="10.16" x2="287.02" y2="10.16" width="0.1524" layer="91"/>
 <label x="287.02" y="10.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="203.2" x2="195.58" y2="203.2" width="0.1524" layer="91"/>
-<label x="195.58" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="220.98" x2="160.02" y2="220.98" width="0.1524" layer="91"/>
+<label x="160.02" y="220.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="25"/>
 </segment>
 </net>
-<net name="IOH109" class="0">
+<net name="PL36A" class="0">
 <segment>
 <pinref part="IC4" gate="G$8" pin="PL36A"/>
 <wire x1="284.48" y1="2.54" x2="287.02" y2="2.54" width="0.1524" layer="91"/>
 <label x="287.02" y="2.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="205.74" x2="195.58" y2="205.74" width="0.1524" layer="91"/>
-<label x="195.58" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="223.52" x2="160.02" y2="223.52" width="0.1524" layer="91"/>
+<label x="160.02" y="223.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="23"/>
 </segment>
 </net>
-<net name="IOH108" class="0">
+<net name="PL36B" class="0">
 <segment>
 <pinref part="IC4" gate="G$8" pin="PL36B"/>
 <wire x1="284.48" y1="0" x2="287.02" y2="0" width="0.1524" layer="91"/>
 <label x="287.02" y="0" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="208.28" x2="195.58" y2="208.28" width="0.1524" layer="91"/>
-<label x="195.58" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="226.06" x2="160.02" y2="226.06" width="0.1524" layer="91"/>
+<label x="160.02" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="21"/>
 </segment>
 </net>
-<net name="IOH103" class="0">
+<net name="PL38A" class="0">
 <segment>
 <pinref part="IC4" gate="G$8" pin="PL38A"/>
 <wire x1="284.48" y1="-2.54" x2="287.02" y2="-2.54" width="0.1524" layer="91"/>
 <label x="287.02" y="-2.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="208.28" y1="205.74" x2="213.36" y2="205.74" width="0.1524" layer="91"/>
-<label x="213.36" y="205.74" size="1.27" layer="95" xref="yes"/>
+<wire x1="172.72" y1="223.52" x2="177.8" y2="223.52" width="0.1524" layer="91"/>
+<label x="177.8" y="223.52" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="24"/>
 </segment>
 </net>
-<net name="IOH102" class="0">
+<net name="PL38B" class="0">
 <segment>
 <pinref part="IC4" gate="G$8" pin="PL38B"/>
 <wire x1="284.48" y1="-5.08" x2="287.02" y2="-5.08" width="0.1524" layer="91"/>
 <label x="287.02" y="-5.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="208.28" y1="208.28" x2="213.36" y2="208.28" width="0.1524" layer="91"/>
-<label x="213.36" y="208.28" size="1.27" layer="95" xref="yes"/>
+<wire x1="172.72" y1="226.06" x2="177.8" y2="226.06" width="0.1524" layer="91"/>
+<label x="177.8" y="226.06" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="22"/>
 </segment>
 </net>
-<net name="IOH107" class="0">
+<net name="PL42A" class="0">
 <segment>
 <pinref part="IC4" gate="G$8" pin="PL42A"/>
 <wire x1="284.48" y1="-12.7" x2="287.02" y2="-12.7" width="0.1524" layer="91"/>
 <label x="287.02" y="-12.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="210.82" x2="196.85" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="196.85" y1="210.82" x2="195.58" y2="210.82" width="0.1524" layer="91"/>
-<label x="195.58" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="228.6" x2="161.29" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="161.29" y1="228.6" x2="160.02" y2="228.6" width="0.1524" layer="91"/>
+<label x="160.02" y="228.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="19"/>
 </segment>
 </net>
-<net name="IOH106" class="0">
+<net name="PL42B" class="0">
 <segment>
 <pinref part="IC4" gate="G$8" pin="PL42B"/>
 <wire x1="284.48" y1="-15.24" x2="287.02" y2="-15.24" width="0.1524" layer="91"/>
 <label x="287.02" y="-15.24" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="213.36" x2="195.58" y2="213.36" width="0.1524" layer="91"/>
-<label x="195.58" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="231.14" x2="160.02" y2="231.14" width="0.1524" layer="91"/>
+<label x="160.02" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="17"/>
 </segment>
 </net>
-<net name="IOH101" class="0">
+<net name="PL44A" class="0">
 <segment>
 <pinref part="IC4" gate="G$8" pin="PL44A"/>
 <wire x1="284.48" y1="-17.78" x2="287.02" y2="-17.78" width="0.1524" layer="91"/>
 <label x="287.02" y="-17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="208.28" y1="210.82" x2="213.36" y2="210.82" width="0.1524" layer="91"/>
-<label x="213.36" y="210.82" size="1.27" layer="95" xref="yes"/>
+<wire x1="172.72" y1="228.6" x2="177.8" y2="228.6" width="0.1524" layer="91"/>
+<label x="177.8" y="228.6" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="20"/>
 </segment>
 </net>
-<net name="IOH100" class="0">
+<net name="PL44B" class="0">
 <segment>
 <pinref part="IC4" gate="G$8" pin="PL44B"/>
 <wire x1="284.48" y1="-20.32" x2="285.75" y2="-20.32" width="0.1524" layer="91"/>
@@ -6078,20 +6100,20 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="287.02" y="-20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="208.28" y1="213.36" x2="213.36" y2="213.36" width="0.1524" layer="91"/>
-<label x="213.36" y="213.36" size="1.27" layer="95" xref="yes"/>
+<wire x1="172.72" y1="231.14" x2="177.8" y2="231.14" width="0.1524" layer="91"/>
+<label x="177.8" y="231.14" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="18"/>
 </segment>
 </net>
-<net name="IOL110" class="0">
+<net name="PL47A" class="0">
 <segment>
 <pinref part="IC4" gate="G$8" pin="PL47A"/>
 <wire x1="284.48" y1="-27.94" x2="287.02" y2="-27.94" width="0.1524" layer="91"/>
 <label x="287.02" y="-27.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="220.98" x2="195.58" y2="220.98" width="0.1524" layer="91"/>
-<label x="195.58" y="220.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="238.76" x2="160.02" y2="238.76" width="0.1524" layer="91"/>
+<label x="160.02" y="238.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="11"/>
 </segment>
 </net>
@@ -6115,9 +6137,9 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="83.82" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="162.56" y1="200.66" x2="166.37" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="166.37" y1="200.66" x2="167.64" y2="200.66" width="0.1524" layer="91"/>
-<label x="167.64" y="200.66" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="218.44" x2="123.19" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="123.19" y1="218.44" x2="124.46" y2="218.44" width="0.1524" layer="91"/>
+<label x="124.46" y="218.44" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="28"/>
 </segment>
 </net>
@@ -6128,40 +6150,40 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="83.82" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="162.56" y1="198.12" x2="167.64" y2="198.12" width="0.1524" layer="91"/>
-<label x="167.64" y="198.12" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="215.9" x2="124.46" y2="215.9" width="0.1524" layer="91"/>
+<label x="124.46" y="215.9" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="30"/>
 </segment>
 </net>
-<net name="IOL11" class="0">
+<net name="PB66A" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB66A"/>
 <wire x1="162.56" y1="2.54" x2="165.1" y2="2.54" width="0.1524" layer="91"/>
 <label x="165.1" y="2.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="198.12" x2="149.86" y2="198.12" width="0.1524" layer="91"/>
-<label x="149.86" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="215.9" x2="106.68" y2="215.9" width="0.1524" layer="91"/>
+<label x="106.68" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="29"/>
 </segment>
 </net>
-<net name="IOL12" class="0">
+<net name="PB66B" class="0">
 <segment>
 <pinref part="IC4" gate="G$5" pin="PB66B"/>
 <wire x1="162.56" y1="0" x2="165.1" y2="0" width="0.1524" layer="91"/>
 <label x="165.1" y="0" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="200.66" x2="149.86" y2="200.66" width="0.1524" layer="91"/>
-<label x="149.86" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="218.44" x2="106.68" y2="218.44" width="0.1524" layer="91"/>
+<label x="106.68" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="27"/>
 </segment>
 </net>
-<net name="IOH14" class="0">
+<net name="PR26A" class="0">
 <segment>
 <pinref part="CON1" gate="G$1" pin="47"/>
-<wire x1="154.94" y1="175.26" x2="149.86" y2="175.26" width="0.1524" layer="91"/>
-<label x="149.86" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="193.04" x2="106.68" y2="193.04" width="0.1524" layer="91"/>
+<label x="106.68" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$4" pin="PR26A"/>
@@ -6169,10 +6191,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="129.54" y="27.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IOH114" class="0">
+<net name="PL24A" class="0">
 <segment>
-<wire x1="208.28" y1="198.12" x2="213.36" y2="198.12" width="0.1524" layer="91"/>
-<label x="213.36" y="198.12" size="1.27" layer="95" xref="yes"/>
+<wire x1="172.72" y1="215.9" x2="177.8" y2="215.9" width="0.1524" layer="91"/>
+<label x="177.8" y="215.9" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="30"/>
 </segment>
 <segment>
@@ -6181,10 +6203,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="287.02" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IOH115" class="0">
+<net name="PL24B" class="0">
 <segment>
-<wire x1="208.28" y1="195.58" x2="213.36" y2="195.58" width="0.1524" layer="91"/>
-<label x="213.36" y="195.58" size="1.27" layer="95" xref="yes"/>
+<wire x1="172.72" y1="213.36" x2="177.8" y2="213.36" width="0.1524" layer="91"/>
+<label x="177.8" y="213.36" size="1.27" layer="95" xref="yes"/>
 <pinref part="CON2" gate="G$1" pin="32"/>
 </segment>
 <segment>
@@ -6262,23 +6284,23 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="59"/>
-<wire x1="200.66" y1="160.02" x2="195.58" y2="160.02" width="0.1524" layer="91"/>
-<label x="195.58" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="177.8" x2="160.02" y2="177.8" width="0.1524" layer="91"/>
+<label x="160.02" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="60"/>
-<wire x1="208.28" y1="160.02" x2="213.36" y2="160.02" width="0.1524" layer="91"/>
-<label x="213.36" y="160.02" size="1.27" layer="95" xref="yes"/>
+<wire x1="172.72" y1="177.8" x2="177.8" y2="177.8" width="0.1524" layer="91"/>
+<label x="177.8" y="177.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="57"/>
-<wire x1="200.66" y1="162.56" x2="195.58" y2="162.56" width="0.1524" layer="91"/>
-<label x="195.58" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="180.34" x2="160.02" y2="180.34" width="0.1524" layer="91"/>
+<label x="160.02" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="58"/>
-<wire x1="208.28" y1="162.56" x2="213.36" y2="162.56" width="0.1524" layer="91"/>
-<label x="213.36" y="162.56" size="1.27" layer="95" xref="yes"/>
+<wire x1="172.72" y1="180.34" x2="177.8" y2="180.34" width="0.1524" layer="91"/>
+<label x="177.8" y="180.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+3.3V_LDO" class="0">
@@ -6337,7 +6359,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <segment>
 <pinref part="X1" gate="G$1" pin="OUT"/>
 <pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="220.98" x2="106.68" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="99.06" x2="106.68" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
