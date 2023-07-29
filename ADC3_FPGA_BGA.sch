@@ -2260,6 +2260,44 @@ type 0207, grid 10 mm</description>
 <wire x1="-1.7" y1="0.9" x2="-1.7" y2="-0.9" width="0.0508" layer="39"/>
 <smd name="2" x="0" y="0" dx="1.4" dy="1" layer="1" rot="R90"/>
 </package>
+<package name="DIL08">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-3.81" y="-3.81" drill="1" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="1" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="1" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="1" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.556" y="-0.635" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-5.3975" y1="4.7625" x2="-5.3975" y2="-4.7625" width="0.0508" layer="39"/>
+<wire x1="-5.3975" y1="-4.7625" x2="5.3975" y2="-4.7625" width="0.0508" layer="39"/>
+<wire x1="5.3975" y1="-4.7625" x2="5.3975" y2="4.7625" width="0.0508" layer="39"/>
+<wire x1="5.3975" y1="4.7625" x2="-5.3975" y2="4.7625" width="0.0508" layer="39"/>
+</package>
+<package name="KC7050">
+<smd name="4" x="-2.54" y="2.1" dx="1.8" dy="2" layer="1"/>
+<smd name="1" x="-2.54" y="-2.1" dx="1.8" dy="2" layer="1"/>
+<smd name="2" x="2.54" y="-2.1" dx="1.8" dy="2" layer="1"/>
+<smd name="3" x="2.54" y="2.1" dx="1.8" dy="2" layer="1"/>
+<text x="-3.81" y="-1.5875" size="0.8128" layer="27" rot="R90">&gt;VALUE</text>
+<text x="4.7625" y="-1.5875" size="0.8128" layer="25" rot="R90">&gt;NAME</text>
+<wire x1="-3.61" y1="-3.275" x2="3.61" y2="-3.275" width="0.0508" layer="39"/>
+<wire x1="3.61" y1="-3.275" x2="3.61" y2="3.275" width="0.0508" layer="39"/>
+<wire x1="3.61" y1="3.275" x2="-3.61" y2="3.275" width="0.0508" layer="39"/>
+<wire x1="-3.61" y1="3.275" x2="-3.61" y2="-3.275" width="0.0508" layer="39"/>
+<wire x1="3.5" y1="-2.5" x2="-3.1" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="-2.5" x2="-3.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-2.5" x2="-3.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="2.5" x2="-3.1" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="2.5" x2="3.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="2.5" x2="3.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="2.5" x2="-3.1" y2="-2.5" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -2371,6 +2409,28 @@ type 0207, grid 10 mm</description>
 <pin name="3" x="2.54" y="0" visible="pad" length="point" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-2.54" y="0" visible="pad" length="point" direction="pas" swaplevel="1"/>
 <pin name="2" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="OSC">
+<pin name="OUT" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="EN" x="12.7" y="2.54" length="middle" direction="in" rot="R180"/>
+<pin name="GND" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="VCC" x="-12.7" y="2.54" length="middle" direction="in"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-6.35" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="SJ">
+<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="2.54" y="0" visible="pad" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="pad" length="point" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2716,6 +2776,71 @@ type 0207, grid 10 mm</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OSC" prefix="X" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="OSC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-DIP" package="DIL08">
+<connects>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-KC7050" package="KC7050">
+<connects>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-KC3225" package="KC3225">
+<connects>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SJ" prefix="J">
+<gates>
+<gate name="G$1" symbol="SJ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-1608" package="1608-J">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2012" package="2012-J">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3270,51 +3395,51 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <parts>
 <part name="IC6" library="my_ic" deviceset="EEPROM_SPI" device="-WIDE" value="EEPROM"/>
 <part name="SUPPLY18" library="my_supply" deviceset="GND" device=""/>
-<part name="C40" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
+<part name="C44" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
 <part name="SUPPLY19" library="my_supply" deviceset="GND" device=""/>
+<part name="R11" library="my_rcl" deviceset="R" device="-1608" value="10k"/>
 <part name="R10" library="my_rcl" deviceset="R" device="-1608" value="10k"/>
 <part name="R9" library="my_rcl" deviceset="R" device="-1608" value="10k"/>
 <part name="R8" library="my_rcl" deviceset="R" device="-1608" value="10k"/>
-<part name="R7" library="my_rcl" deviceset="R" device="-1608" value="10k"/>
 <part name="D4" library="my_rcl" deviceset="LED" device="-SMD1608" value="2"/>
 <part name="D3" library="my_rcl" deviceset="LED" device="-SMD1608" value="1"/>
 <part name="D2" library="my_rcl" deviceset="LED" device="-SMD1608" value="0"/>
-<part name="R11" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
 <part name="R12" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
-<part name="R14" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
+<part name="R13" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
+<part name="R15" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
 <part name="SUPPLY36" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY37" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY38" library="my_supply" deviceset="GND" device=""/>
-<part name="R19" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
+<part name="R20" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
 <part name="D6" library="my_rcl" deviceset="LED" device="-SMD1608" value="P"/>
 <part name="SUPPLY61" library="my_supply" deviceset="GND" device=""/>
 <part name="+3V8" library="my_supply" deviceset="+3V3" device=""/>
-<part name="R6" library="my_rcl" deviceset="R" device="-1608" value="10k"/>
+<part name="R7" library="my_rcl" deviceset="R" device="-1608" value="10k"/>
 <part name="R5" library="my_rcl" deviceset="R" device="-1608" value="10k"/>
 <part name="IC8" library="my_ic" deviceset="FT2232H" device="-2" value="FT2232H"/>
-<part name="C47" library="my_rcl" deviceset="C" device="-1608" value="10u"/>
+<part name="C52" library="my_rcl" deviceset="C" device="-1608" value="10u"/>
 <part name="SUPPLY21" library="my_supply" deviceset="GND" device=""/>
 <part name="CON3" library="my_connector" deviceset="USB" device="-SC" value="USB-SC"/>
 <part name="SUPPLY22" library="my_supply" deviceset="GND" device=""/>
-<part name="R16" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
-<part name="R13" library="my_rcl" deviceset="R" device="-1608" value="10k"/>
+<part name="R17" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
+<part name="R14" library="my_rcl" deviceset="R" device="-1608" value="10k"/>
 <part name="IC7" library="my_ic" deviceset="93LC56" device=""/>
 <part name="SUPPLY23" library="my_supply" deviceset="GND" device=""/>
-<part name="C46" library="my_rcl" deviceset="C" device="-1608" value="22p"/>
-<part name="C45" library="my_rcl" deviceset="C" device="-1608" value="22p"/>
+<part name="C51" library="my_rcl" deviceset="C" device="-1608" value="22p"/>
+<part name="C50" library="my_rcl" deviceset="C" device="-1608" value="22p"/>
 <part name="SUPPLY24" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY25" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY26" library="my_supply" deviceset="GND" device=""/>
-<part name="R17" library="my_rcl" deviceset="R" device="-1608" value="12.1k"/>
+<part name="R18" library="my_rcl" deviceset="R" device="-1608" value="12.1k"/>
 <part name="SUPPLY27" library="my_supply" deviceset="GND" device=""/>
-<part name="R18" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
+<part name="R19" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
 <part name="SUPPLY28" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY29" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY31" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY32" library="my_supply" deviceset="GND" device=""/>
-<part name="C41" library="my_rcl" deviceset="C" device="-1608" value="10u"/>
+<part name="C46" library="my_rcl" deviceset="C" device="-1608" value="10u"/>
 <part name="SUPPLY33" library="my_supply" deviceset="GND" device=""/>
-<part name="X1" library="my_rcl" deviceset="CRYSTAL2" device="" value="12MHz"/>
+<part name="X2" library="my_rcl" deviceset="CRYSTAL2" device="" value="12MHz"/>
 <part name="SUPPLY35" library="my_supply" deviceset="GND" device=""/>
 <part name="FB6" library="my_rcl" deviceset="FB" device="" value="FT"/>
 <part name="+3V7" library="my_supply" deviceset="+3V3" device=""/>
@@ -3323,7 +3448,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="SUPPLY57" library="my_supply" deviceset="GND" device=""/>
 <part name="FB8" library="my_rcl" deviceset="FB" device="" value="DRAM"/>
 <part name="+1V3" library="my_supply" deviceset="+1V8" device=""/>
-<part name="C51" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
+<part name="C56" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
 <part name="SUPPLY58" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY60" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY63" library="my_supply" deviceset="GND" device=""/>
@@ -3339,24 +3464,24 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="+3V6" library="my_supply" deviceset="+3V3" device=""/>
 <part name="SUPPLY42" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY43" library="my_supply" deviceset="GND" device=""/>
-<part name="C52" library="my_rcl" deviceset="C" device="-2012" value="10u"/>
+<part name="C57" library="my_rcl" deviceset="C" device="-2012" value="10u"/>
 <part name="SUPPLY50" library="my_supply" deviceset="GND" device=""/>
-<part name="C42" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
-<part name="C43" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
+<part name="C47" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
 <part name="C48" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
-<part name="C49" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
+<part name="C53" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
+<part name="C54" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
 <part name="SUPPLY51" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY52" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY53" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY54" library="my_supply" deviceset="GND" device=""/>
-<part name="C44" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
+<part name="C49" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
 <part name="SUPPLY55" library="my_supply" deviceset="GND" device=""/>
 <part name="IC4" library="my_ic" deviceset="MPM3804" device=""/>
 <part name="SUPPLY44" library="my_supply" deviceset="GND" device=""/>
 <part name="FB4" library="my_rcl" deviceset="FB" device="" value="1.8V"/>
 <part name="+1V4" library="my_supply" deviceset="+1V8" device=""/>
 <part name="C19" library="my_rcl" deviceset="C" device="-1608" value="10u"/>
-<part name="C25" library="my_rcl" deviceset="C" device="-2012" value="10u"/>
+<part name="C23" library="my_rcl" deviceset="C" device="-2012" value="10u"/>
 <part name="SUPPLY45" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY49" library="my_supply" deviceset="GND" device=""/>
 <part name="R1" library="my_rcl" deviceset="R" device="-1608" value="10k"/>
@@ -3370,7 +3495,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="SUPPLY71" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY72" library="my_supply" deviceset="GND" device=""/>
 <part name="+3V2" library="my_supply" deviceset="+3V3" device=""/>
-<part name="C11" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
+<part name="C9" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
 <part name="SUPPLY73" library="my_supply" deviceset="GND" device=""/>
 <part name="D1" library="my_rcl" deviceset="SBD" device="-1A2" value="USB"/>
 <part name="+3V3" library="my_supply" deviceset="+3V3" device=""/>
@@ -3387,25 +3512,25 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="SUPPLY75" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY82" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY83" library="my_supply" deviceset="GND" device=""/>
-<part name="C6" library="my_rcl" deviceset="C" device="-1608" value="10u"/>
+<part name="C4" library="my_rcl" deviceset="C" device="-1608" value="10u"/>
 <part name="C3" library="my_rcl" deviceset="C" device="-1608" value="10u"/>
 <part name="SUPPLY84" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY85" library="my_supply" deviceset="GND" device=""/>
 <part name="FB1" library="my_rcl" deviceset="FB" device="" value="VIN"/>
-<part name="C50" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
+<part name="C55" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
 <part name="SUPPLY86" library="my_supply" deviceset="GND" device=""/>
 <part name="C1" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
 <part name="SUPPLY87" library="my_supply" deviceset="GND" device=""/>
 <part name="IC1" library="my_ic" deviceset="ARTIX7-FTG256" device=""/>
 <part name="SUPPLY1" library="my_supply" deviceset="GND" device=""/>
 <part name="C8" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
-<part name="C10" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
+<part name="C12" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
 <part name="C14" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
 <part name="+1V1" library="my_supply" deviceset="+1V8" device=""/>
 <part name="SUPPLY3" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="my_supply" deviceset="GND" device=""/>
-<part name="C9" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
+<part name="C11" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
 <part name="C13" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
 <part name="C15" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
 <part name="SUPPLY6" library="my_supply" deviceset="GND" device=""/>
@@ -3418,7 +3543,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="SUPPLY11" library="my_supply" deviceset="GND" device=""/>
 <part name="FB5" library="my_rcl" deviceset="FB" device="" value="1.0V"/>
 <part name="C20" library="my_rcl" deviceset="C" device="-1608" value="10u"/>
-<part name="C26" library="my_rcl" deviceset="C" device="-2012" value="10u"/>
+<part name="C24" library="my_rcl" deviceset="C" device="-2012" value="10u"/>
 <part name="SUPPLY12" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY20" library="my_supply" deviceset="GND" device=""/>
 <part name="R3" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
@@ -3445,7 +3570,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="TP3" library="my_connector" deviceset="TESTPIN" device="-PAD" value="TCK"/>
 <part name="TP4" library="my_connector" deviceset="TESTPIN" device="-PAD" value="TDO"/>
 <part name="D5" library="my_rcl" deviceset="LED" device="-SMD1608" value="3"/>
-<part name="R15" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
+<part name="R16" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
 <part name="SUPPLY34" library="my_supply" deviceset="GND" device=""/>
 <part name="TP5" library="my_connector" deviceset="TESTPIN" device="-PAD" value="GND"/>
 <part name="SUPPLY39" library="my_supply" deviceset="GND" device=""/>
@@ -3456,55 +3581,55 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="C22" library="my_rcl" deviceset="C" device="-2012" value="10u"/>
 <part name="SUPPLY48" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY65" library="my_supply" deviceset="GND" device=""/>
-<part name="C12" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
+<part name="C10" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
 <part name="SUPPLY66" library="my_supply" deviceset="GND" device=""/>
 <part name="+2V1" library="my_supply" deviceset="+2V5" device=""/>
-<part name="R20" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
+<part name="R21" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
 <part name="J1" library="my_rcl" deviceset="SJ-3" device="" value="BANK34"/>
 <part name="J2" library="my_rcl" deviceset="SJ-3" device="" value="BANK35"/>
 <part name="+2V2" library="my_supply" deviceset="+2V5" device=""/>
 <part name="+2V3" library="my_supply" deviceset="+2V5" device=""/>
 <part name="+3V19" library="my_supply" deviceset="+3V3" device=""/>
 <part name="+3V20" library="my_supply" deviceset="+3V3" device=""/>
-<part name="C23" library="my_rcl" deviceset="C" device="-2012" value="10u"/>
-<part name="C24" library="my_rcl" deviceset="C" device="-2012" value="10u"/>
+<part name="C27" library="my_rcl" deviceset="C" device="-2012" value="10u"/>
+<part name="C28" library="my_rcl" deviceset="C" device="-2012" value="10u"/>
 <part name="SUPPLY67" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY69" library="my_supply" deviceset="GND" device=""/>
-<part name="C27" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
-<part name="C29" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
+<part name="C31" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
+<part name="C33" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
 <part name="SUPPLY76" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY77" library="my_supply" deviceset="GND" device=""/>
-<part name="C28" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
-<part name="C30" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
+<part name="C32" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
+<part name="C34" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
 <part name="SUPPLY78" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY79" library="my_supply" deviceset="GND" device=""/>
 <part name="C2" library="my_rcl" deviceset="C" device="-2012" value="10u"/>
 <part name="SUPPLY80" library="my_supply" deviceset="GND" device=""/>
 <part name="C7" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
-<part name="C4" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
+<part name="C5" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
 <part name="SUPPLY81" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY88" library="my_supply" deviceset="GND" device=""/>
-<part name="C5" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
+<part name="C6" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
 <part name="SUPPLY89" library="my_supply" deviceset="GND" device=""/>
 <part name="+1V7" library="my_supply" deviceset="+1V8" device=""/>
-<part name="C32" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
-<part name="C34" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
 <part name="C36" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
+<part name="C38" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
+<part name="C40" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
 <part name="SUPPLY96" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY97" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY98" library="my_supply" deviceset="GND" device=""/>
 <part name="+3V16" library="my_supply" deviceset="+3V3" device=""/>
-<part name="C33" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
-<part name="C35" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
 <part name="C37" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
-<part name="C38" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
+<part name="C39" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
+<part name="C41" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
+<part name="C42" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
 <part name="SUPPLY99" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY100" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY101" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY102" library="my_supply" deviceset="GND" device=""/>
-<part name="C39" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
+<part name="C43" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
 <part name="SUPPLY103" library="my_supply" deviceset="GND" device=""/>
-<part name="C31" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
+<part name="C35" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
 <part name="SUPPLY104" library="my_supply" deviceset="GND" device=""/>
 <part name="+3V18" library="my_supply" deviceset="+3V3" device=""/>
 <part name="+3V21" library="my_supply" deviceset="+3V3" device=""/>
@@ -3517,10 +3642,22 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="C16" library="my_rcl" deviceset="C" device="-1005" value="1u"/>
 <part name="P3" library="my_supply" deviceset="+1V0" device=""/>
 <part name="SUPPLY106" library="my_supply" deviceset="GND" device=""/>
-<part name="C53" library="my_rcl" deviceset="C" device="-2012" value="10u"/>
+<part name="C26" library="my_rcl" deviceset="C" device="-2012" value="10u"/>
 <part name="SUPPLY105" library="my_supply" deviceset="GND" device=""/>
-<part name="C54" library="my_rcl" deviceset="C" device="-2012" value="10u"/>
+<part name="C25" library="my_rcl" deviceset="C" device="-2012" value="10u"/>
 <part name="SUPPLY107" library="my_supply" deviceset="GND" device=""/>
+<part name="X1" library="my_rcl" deviceset="OSC" device="-KC3225" value="25MHz"/>
+<part name="SUPPLY108" library="my_supply" deviceset="GND" device=""/>
+<part name="J3" library="my_rcl" deviceset="SJ" device="-1608" value="25M"/>
+<part name="+3V22" library="my_supply" deviceset="+3V3" device=""/>
+<part name="+3V23" library="my_supply" deviceset="+3V3" device=""/>
+<part name="C45" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
+<part name="C30" library="my_rcl" deviceset="C" device="-3216" value="10u"/>
+<part name="SUPPLY109" library="my_supply" deviceset="GND" device=""/>
+<part name="C29" library="my_rcl" deviceset="C" device="-3216" value="10u"/>
+<part name="SUPPLY110" library="my_supply" deviceset="GND" device=""/>
+<part name="R6" library="my_rcl" deviceset="R" device="-1608" value="10k"/>
+<part name="SUPPLY111" library="my_supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3542,10 +3679,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="205.74" y1="162.56" x2="81.28" y2="162.56" width="0.508" layer="97"/>
 <text x="83.82" y="165.1" size="5.08" layer="97">FPGA IO</text>
 <wire x1="71.12" y1="147.32" x2="71.12" y2="259.08" width="0.508" layer="97"/>
-<wire x1="71.12" y1="259.08" x2="-63.5" y2="259.08" width="0.508" layer="97"/>
-<wire x1="-63.5" y1="259.08" x2="-63.5" y2="147.32" width="0.508" layer="97"/>
-<wire x1="-63.5" y1="147.32" x2="71.12" y2="147.32" width="0.508" layer="97"/>
-<text x="-60.96" y="149.86" size="5.08" layer="97">DC-DC / LDO</text>
+<wire x1="71.12" y1="259.08" x2="-71.12" y2="259.08" width="0.508" layer="97"/>
+<wire x1="-71.12" y1="259.08" x2="-71.12" y2="147.32" width="0.508" layer="97"/>
+<wire x1="-71.12" y1="147.32" x2="71.12" y2="147.32" width="0.508" layer="97"/>
+<text x="-68.58" y="149.86" size="5.08" layer="97">DC-DC / LDO</text>
 </plain>
 <instances>
 <instance part="IC6" gate="G$1" x="175.26" y="93.98" smashed="yes">
@@ -3553,24 +3690,24 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <attribute name="VALUE" x="171.45" y="81.28" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY18" gate="GND" x="162.56" y="83.82" smashed="yes"/>
-<instance part="C40" gate="G$1" x="193.04" y="99.06" smashed="yes">
+<instance part="C44" gate="G$1" x="193.04" y="99.06" smashed="yes">
 <attribute name="NAME" x="194.31" y="99.695" size="1.778" layer="95"/>
 <attribute name="VALUE" x="194.31" y="97.155" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY19" gate="GND" x="193.04" y="93.98" smashed="yes"/>
-<instance part="R10" gate="G$1" x="187.96" y="142.24" smashed="yes" rot="R90">
+<instance part="R11" gate="G$1" x="187.96" y="142.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="186.4614" y="138.43" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="191.262" y="138.43" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R9" gate="G$1" x="182.88" y="142.24" smashed="yes" rot="R90">
+<instance part="R10" gate="G$1" x="182.88" y="142.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="181.3814" y="138.43" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="186.182" y="138.43" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R8" gate="G$1" x="177.8" y="142.24" smashed="yes" rot="R90">
+<instance part="R9" gate="G$1" x="177.8" y="142.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="176.3014" y="138.43" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="181.102" y="138.43" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R7" gate="G$1" x="172.72" y="142.24" smashed="yes" rot="R90">
+<instance part="R8" gate="G$1" x="172.72" y="142.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="171.2214" y="138.43" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="176.022" y="138.43" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -3586,22 +3723,22 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <attribute name="NAME" x="234.696" y="98.298" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="236.855" y="98.298" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R11" gate="G$1" x="231.14" y="93.98" smashed="yes" rot="R90">
+<instance part="R12" gate="G$1" x="231.14" y="93.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="229.6414" y="90.17" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="234.442" y="90.17" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R12" gate="G$1" x="241.3" y="93.98" smashed="yes" rot="R90">
+<instance part="R13" gate="G$1" x="241.3" y="93.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="239.8014" y="90.17" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="244.602" y="90.17" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R14" gate="G$1" x="251.46" y="93.98" smashed="yes" rot="R90">
+<instance part="R15" gate="G$1" x="251.46" y="93.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="249.9614" y="90.17" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="254.762" y="90.17" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SUPPLY36" gate="GND" x="231.14" y="86.36" smashed="yes"/>
 <instance part="SUPPLY37" gate="GND" x="241.3" y="86.36" smashed="yes"/>
 <instance part="SUPPLY38" gate="GND" x="251.46" y="86.36" smashed="yes"/>
-<instance part="R19" gate="G$1" x="271.78" y="93.98" smashed="yes" rot="R90">
+<instance part="R20" gate="G$1" x="271.78" y="93.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="270.2814" y="90.17" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="275.082" y="90.17" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -3613,7 +3750,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="+3V8" gate="G$1" x="271.78" y="106.68" smashed="yes">
 <attribute name="VALUE" x="269.24" y="106.68" size="1.778" layer="96"/>
 </instance>
-<instance part="R6" gate="G$1" x="132.08" y="142.24" smashed="yes" rot="R90">
+<instance part="R7" gate="G$1" x="132.08" y="142.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="130.5814" y="138.43" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="135.382" y="138.43" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -3625,7 +3762,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <attribute name="NAME" x="281.94" y="240.03" size="1.778" layer="95"/>
 <attribute name="VALUE" x="327.66" y="240.03" size="1.778" layer="96"/>
 </instance>
-<instance part="C47" gate="G$1" x="269.24" y="243.84" smashed="yes" rot="MR0">
+<instance part="C52" gate="G$1" x="269.24" y="243.84" smashed="yes" rot="MR0">
 <attribute name="NAME" x="267.97" y="244.475" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="267.97" y="241.935" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -3635,11 +3772,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <attribute name="VALUE" x="238.76" y="205.74" size="1.778" layer="104"/>
 </instance>
 <instance part="SUPPLY22" gate="GND" x="256.54" y="208.28" smashed="yes"/>
-<instance part="R16" gate="G$1" x="264.16" y="185.42" smashed="yes">
+<instance part="R17" gate="G$1" x="264.16" y="185.42" smashed="yes">
 <attribute name="NAME" x="260.35" y="186.9186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="260.35" y="182.118" size="1.778" layer="96"/>
 </instance>
-<instance part="R13" gate="G$1" x="248.92" y="198.12" smashed="yes">
+<instance part="R14" gate="G$1" x="248.92" y="198.12" smashed="yes">
 <attribute name="NAME" x="245.11" y="199.6186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="245.11" y="194.818" size="1.778" layer="96"/>
 </instance>
@@ -3648,23 +3785,23 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <attribute name="VALUE" x="228.6" y="177.8" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY23" gate="GND" x="223.52" y="180.34" smashed="yes"/>
-<instance part="C46" gate="G$1" x="264.16" y="167.64" smashed="yes">
+<instance part="C51" gate="G$1" x="264.16" y="167.64" smashed="yes">
 <attribute name="NAME" x="265.43" y="168.275" size="1.778" layer="95"/>
 <attribute name="VALUE" x="265.43" y="165.735" size="1.778" layer="96"/>
 </instance>
-<instance part="C45" gate="G$1" x="259.08" y="167.64" smashed="yes" rot="MR0">
+<instance part="C50" gate="G$1" x="259.08" y="167.64" smashed="yes" rot="MR0">
 <attribute name="NAME" x="257.81" y="168.275" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="257.81" y="165.735" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="SUPPLY24" gate="GND" x="259.08" y="162.56" smashed="yes"/>
 <instance part="SUPPLY25" gate="GND" x="264.16" y="162.56" smashed="yes"/>
 <instance part="SUPPLY26" gate="GND" x="276.86" y="152.4" smashed="yes"/>
-<instance part="R17" gate="G$1" x="271.78" y="208.28" smashed="yes" rot="R180">
+<instance part="R18" gate="G$1" x="271.78" y="208.28" smashed="yes" rot="R180">
 <attribute name="NAME" x="275.59" y="206.7814" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="275.59" y="211.582" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="SUPPLY27" gate="GND" x="266.7" y="205.74" smashed="yes"/>
-<instance part="R18" gate="G$1" x="271.78" y="203.2" smashed="yes">
+<instance part="R19" gate="G$1" x="271.78" y="203.2" smashed="yes">
 <attribute name="NAME" x="267.97" y="204.6986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="267.97" y="199.898" size="1.778" layer="96"/>
 </instance>
@@ -3672,12 +3809,12 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="SUPPLY29" gate="GND" x="312.42" y="139.7" smashed="yes"/>
 <instance part="SUPPLY31" gate="GND" x="314.96" y="139.7" smashed="yes"/>
 <instance part="SUPPLY32" gate="GND" x="317.5" y="139.7" smashed="yes"/>
-<instance part="C41" gate="G$1" x="241.3" y="248.92" smashed="yes" rot="MR0">
+<instance part="C46" gate="G$1" x="241.3" y="248.92" smashed="yes" rot="MR0">
 <attribute name="NAME" x="240.03" y="249.555" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="240.03" y="247.015" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="SUPPLY33" gate="GND" x="241.3" y="243.84" smashed="yes"/>
-<instance part="X1" gate="G$1" x="261.62" y="172.72" smashed="yes">
+<instance part="X2" gate="G$1" x="261.62" y="172.72" smashed="yes">
 <attribute name="NAME" x="264.16" y="173.736" size="1.778" layer="95"/>
 <attribute name="VALUE" x="264.16" y="170.18" size="1.778" layer="96"/>
 </instance>
@@ -3702,7 +3839,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="+1V3" gate="G$1" x="467.36" y="236.22" smashed="yes">
 <attribute name="VALUE" x="467.36" y="236.22" size="1.778" layer="96"/>
 </instance>
-<instance part="C51" gate="G$1" x="441.96" y="231.14" smashed="yes">
+<instance part="C56" gate="G$1" x="441.96" y="231.14" smashed="yes">
 <attribute name="NAME" x="443.23" y="231.775" size="1.778" layer="95"/>
 <attribute name="VALUE" x="443.23" y="229.235" size="1.778" layer="96"/>
 </instance>
@@ -3735,24 +3872,24 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </instance>
 <instance part="SUPPLY42" gate="GND" x="104.14" y="180.34" smashed="yes" rot="R270"/>
 <instance part="SUPPLY43" gate="GND" x="127" y="180.34" smashed="yes" rot="R90"/>
-<instance part="C52" gate="G$1" x="447.04" y="231.14" smashed="yes">
+<instance part="C57" gate="G$1" x="447.04" y="231.14" smashed="yes">
 <attribute name="NAME" x="448.31" y="231.775" size="1.778" layer="95"/>
 <attribute name="VALUE" x="448.31" y="229.235" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY50" gate="GND" x="447.04" y="226.06" smashed="yes"/>
-<instance part="C42" gate="G$1" x="246.38" y="248.92" smashed="yes" rot="MR0">
+<instance part="C47" gate="G$1" x="246.38" y="248.92" smashed="yes" rot="MR0">
 <attribute name="NAME" x="245.11" y="249.555" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="245.11" y="247.015" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C43" gate="G$1" x="251.46" y="248.92" smashed="yes" rot="MR0">
+<instance part="C48" gate="G$1" x="251.46" y="248.92" smashed="yes" rot="MR0">
 <attribute name="NAME" x="250.19" y="249.555" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="250.19" y="247.015" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C48" gate="G$1" x="274.32" y="243.84" smashed="yes" rot="MR0">
+<instance part="C53" gate="G$1" x="274.32" y="243.84" smashed="yes" rot="MR0">
 <attribute name="NAME" x="273.05" y="244.475" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="273.05" y="241.935" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C49" gate="G$1" x="279.4" y="243.84" smashed="yes" rot="MR0">
+<instance part="C54" gate="G$1" x="279.4" y="243.84" smashed="yes" rot="MR0">
 <attribute name="NAME" x="278.13" y="244.475" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="278.13" y="241.935" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -3760,72 +3897,72 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="SUPPLY52" gate="GND" x="251.46" y="243.84" smashed="yes"/>
 <instance part="SUPPLY53" gate="GND" x="274.32" y="238.76" smashed="yes"/>
 <instance part="SUPPLY54" gate="GND" x="279.4" y="238.76" smashed="yes"/>
-<instance part="C44" gate="G$1" x="256.54" y="248.92" smashed="yes" rot="MR0">
+<instance part="C49" gate="G$1" x="256.54" y="248.92" smashed="yes" rot="MR0">
 <attribute name="NAME" x="255.27" y="249.555" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="255.27" y="247.015" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="SUPPLY55" gate="GND" x="256.54" y="243.84" smashed="yes"/>
-<instance part="IC4" gate="G$1" x="20.32" y="200.66" smashed="yes">
-<attribute name="NAME" x="12.7" y="208.28" size="1.778" layer="95"/>
-<attribute name="VALUE" x="22.86" y="193.04" size="1.778" layer="96"/>
+<instance part="IC4" gate="G$1" x="12.7" y="200.66" smashed="yes">
+<attribute name="NAME" x="5.08" y="208.28" size="1.778" layer="95"/>
+<attribute name="VALUE" x="15.24" y="193.04" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY44" gate="GND" x="20.32" y="187.96" smashed="yes"/>
-<instance part="FB4" gate="G$1" x="53.34" y="205.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="58.42" y="204.47" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="58.42" y="210.82" size="1.778" layer="96" rot="R180"/>
+<instance part="SUPPLY44" gate="GND" x="12.7" y="187.96" smashed="yes"/>
+<instance part="FB4" gate="G$1" x="45.72" y="205.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.8" y="204.47" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="50.8" y="210.82" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="+1V4" gate="G$1" x="66.04" y="210.82" smashed="yes">
-<attribute name="VALUE" x="63.5" y="210.82" size="1.778" layer="96"/>
+<instance part="+1V4" gate="G$1" x="58.42" y="210.82" smashed="yes">
+<attribute name="VALUE" x="55.88" y="210.82" size="1.778" layer="96"/>
 </instance>
-<instance part="C19" gate="G$1" x="40.64" y="200.66" smashed="yes">
-<attribute name="NAME" x="41.91" y="201.295" size="1.778" layer="95"/>
-<attribute name="VALUE" x="41.91" y="198.755" size="1.778" layer="96"/>
+<instance part="C19" gate="G$1" x="33.02" y="200.66" smashed="yes">
+<attribute name="NAME" x="34.29" y="201.295" size="1.778" layer="95"/>
+<attribute name="VALUE" x="34.29" y="198.755" size="1.778" layer="96"/>
 </instance>
-<instance part="C25" gate="G$1" x="60.96" y="200.66" smashed="yes">
-<attribute name="NAME" x="62.23" y="201.295" size="1.778" layer="95"/>
-<attribute name="VALUE" x="62.23" y="198.755" size="1.778" layer="96"/>
+<instance part="C23" gate="G$1" x="53.34" y="200.66" smashed="yes">
+<attribute name="NAME" x="54.61" y="201.295" size="1.778" layer="95"/>
+<attribute name="VALUE" x="54.61" y="198.755" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY45" gate="GND" x="40.64" y="195.58" smashed="yes"/>
-<instance part="SUPPLY49" gate="GND" x="60.96" y="195.58" smashed="yes"/>
-<instance part="R1" gate="G$1" x="45.72" y="198.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="44.2214" y="194.31" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="49.022" y="194.31" size="1.778" layer="96" rot="R90"/>
+<instance part="SUPPLY45" gate="GND" x="33.02" y="195.58" smashed="yes"/>
+<instance part="SUPPLY49" gate="GND" x="53.34" y="195.58" smashed="yes"/>
+<instance part="R1" gate="G$1" x="38.1" y="198.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.6014" y="194.31" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="41.402" y="194.31" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R2" gate="G$1" x="45.72" y="187.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="44.2214" y="184.15" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="49.022" y="184.15" size="1.778" layer="96" rot="R90"/>
+<instance part="R2" gate="G$1" x="38.1" y="187.96" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.6014" y="184.15" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="41.402" y="184.15" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY68" gate="GND" x="45.72" y="180.34" smashed="yes"/>
-<instance part="IC2" gate="G$1" x="20.32" y="246.38" smashed="yes">
-<attribute name="NAME" x="12.7" y="252.73" size="1.778" layer="95"/>
-<attribute name="VALUE" x="22.86" y="241.3" size="1.778" layer="96"/>
+<instance part="SUPPLY68" gate="GND" x="38.1" y="180.34" smashed="yes"/>
+<instance part="IC2" gate="G$1" x="12.7" y="246.38" smashed="yes">
+<attribute name="NAME" x="5.08" y="252.73" size="1.778" layer="95"/>
+<attribute name="VALUE" x="15.24" y="241.3" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY70" gate="GND" x="20.32" y="236.22" smashed="yes"/>
-<instance part="FB2" gate="G$1" x="43.18" y="248.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="48.26" y="247.65" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="48.26" y="254" size="1.778" layer="96" rot="R180"/>
+<instance part="SUPPLY70" gate="GND" x="12.7" y="236.22" smashed="yes"/>
+<instance part="FB2" gate="G$1" x="35.56" y="248.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="40.64" y="247.65" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="40.64" y="254" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C17" gate="G$1" x="35.56" y="243.84" smashed="yes">
-<attribute name="NAME" x="36.83" y="244.475" size="1.778" layer="95"/>
-<attribute name="VALUE" x="36.83" y="241.935" size="1.778" layer="96"/>
+<instance part="C17" gate="G$1" x="27.94" y="243.84" smashed="yes">
+<attribute name="NAME" x="29.21" y="244.475" size="1.778" layer="95"/>
+<attribute name="VALUE" x="29.21" y="241.935" size="1.778" layer="96"/>
 </instance>
-<instance part="C21" gate="G$1" x="50.8" y="243.84" smashed="yes">
-<attribute name="NAME" x="52.07" y="244.475" size="1.778" layer="95"/>
-<attribute name="VALUE" x="52.07" y="241.935" size="1.778" layer="96"/>
+<instance part="C21" gate="G$1" x="43.18" y="243.84" smashed="yes">
+<attribute name="NAME" x="44.45" y="244.475" size="1.778" layer="95"/>
+<attribute name="VALUE" x="44.45" y="241.935" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY71" gate="GND" x="35.56" y="238.76" smashed="yes"/>
-<instance part="SUPPLY72" gate="GND" x="50.8" y="238.76" smashed="yes"/>
-<instance part="+3V2" gate="G$1" x="55.88" y="254" smashed="yes">
-<attribute name="VALUE" x="53.34" y="254" size="1.778" layer="96"/>
+<instance part="SUPPLY71" gate="GND" x="27.94" y="238.76" smashed="yes"/>
+<instance part="SUPPLY72" gate="GND" x="43.18" y="238.76" smashed="yes"/>
+<instance part="+3V2" gate="G$1" x="48.26" y="254" smashed="yes">
+<attribute name="VALUE" x="45.72" y="254" size="1.778" layer="96"/>
 </instance>
-<instance part="C11" gate="G$1" x="5.08" y="243.84" smashed="yes" rot="MR0">
-<attribute name="NAME" x="3.81" y="244.475" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="3.81" y="241.935" size="1.778" layer="96" rot="MR0"/>
+<instance part="C9" gate="G$1" x="-2.54" y="243.84" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-3.81" y="244.475" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="-3.81" y="241.935" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="SUPPLY73" gate="GND" x="5.08" y="238.76" smashed="yes"/>
-<instance part="D1" gate="G$1" x="-43.18" y="215.9" smashed="yes">
-<attribute name="NAME" x="-46.99" y="219.075" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-46.99" y="211.455" size="1.778" layer="96"/>
+<instance part="SUPPLY73" gate="GND" x="-2.54" y="238.76" smashed="yes"/>
+<instance part="D1" gate="G$1" x="-50.8" y="215.9" smashed="yes">
+<attribute name="NAME" x="-54.61" y="219.075" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-54.61" y="211.455" size="1.778" layer="96"/>
 </instance>
 <instance part="+3V3" gate="G$1" x="193.04" y="106.68" smashed="yes">
 <attribute name="VALUE" x="190.5" y="106.68" size="1.778" layer="96"/>
@@ -3854,30 +3991,30 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="SUPPLY75" gate="GND" x="157.48" y="200.66" smashed="yes" rot="R270"/>
 <instance part="SUPPLY82" gate="GND" x="180.34" y="200.66" smashed="yes" rot="R90"/>
 <instance part="SUPPLY83" gate="GND" x="180.34" y="198.12" smashed="yes" rot="R90"/>
-<instance part="C6" gate="G$1" x="-5.08" y="200.66" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-6.35" y="201.295" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="-6.35" y="198.755" size="1.778" layer="96" rot="MR0"/>
+<instance part="C4" gate="G$1" x="-12.7" y="200.66" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-13.97" y="201.295" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="-13.97" y="198.755" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C3" gate="G$1" x="-10.16" y="200.66" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-11.43" y="201.295" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="-11.43" y="198.755" size="1.778" layer="96" rot="MR0"/>
+<instance part="C3" gate="G$1" x="-17.78" y="200.66" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-19.05" y="201.295" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="-19.05" y="198.755" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="SUPPLY84" gate="GND" x="-10.16" y="195.58" smashed="yes"/>
-<instance part="SUPPLY85" gate="GND" x="-5.08" y="195.58" smashed="yes"/>
-<instance part="FB1" gate="G$1" x="-27.94" y="205.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="-22.86" y="204.47" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-22.86" y="210.82" size="1.778" layer="96" rot="R180"/>
+<instance part="SUPPLY84" gate="GND" x="-17.78" y="195.58" smashed="yes"/>
+<instance part="SUPPLY85" gate="GND" x="-12.7" y="195.58" smashed="yes"/>
+<instance part="FB1" gate="G$1" x="-35.56" y="205.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="-30.48" y="204.47" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-30.48" y="210.82" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C50" gate="G$1" x="436.88" y="231.14" smashed="yes">
+<instance part="C55" gate="G$1" x="436.88" y="231.14" smashed="yes">
 <attribute name="NAME" x="438.15" y="231.775" size="1.778" layer="95"/>
 <attribute name="VALUE" x="438.15" y="229.235" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY86" gate="GND" x="436.88" y="226.06" smashed="yes"/>
-<instance part="C1" gate="G$1" x="-35.56" y="200.66" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-36.83" y="201.295" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="-36.83" y="198.755" size="1.778" layer="96" rot="MR0"/>
+<instance part="C1" gate="G$1" x="-43.18" y="200.66" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-44.45" y="201.295" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="-44.45" y="198.755" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="SUPPLY87" gate="GND" x="-35.56" y="195.58" smashed="yes"/>
+<instance part="SUPPLY87" gate="GND" x="-43.18" y="195.58" smashed="yes"/>
 <instance part="IC1" gate="G$1" x="-22.86" y="104.14" smashed="yes">
 <attribute name="NAME" x="-38.1" y="106.68" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="-27.94" y="106.68" size="1.778" layer="96" align="center-left"/>
@@ -3907,7 +4044,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <attribute name="NAME" x="-3.81" y="94.615" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-3.81" y="92.075" size="1.778" layer="96"/>
 </instance>
-<instance part="C10" gate="G$1" x="0" y="93.98" smashed="yes">
+<instance part="C12" gate="G$1" x="0" y="93.98" smashed="yes">
 <attribute name="NAME" x="1.27" y="94.615" size="1.778" layer="95"/>
 <attribute name="VALUE" x="1.27" y="92.075" size="1.778" layer="96"/>
 </instance>
@@ -3921,7 +4058,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="SUPPLY3" gate="GND" x="-5.08" y="88.9" smashed="yes"/>
 <instance part="SUPPLY4" gate="GND" x="0" y="88.9" smashed="yes"/>
 <instance part="SUPPLY5" gate="GND" x="5.08" y="88.9" smashed="yes"/>
-<instance part="C9" gate="G$1" x="0" y="111.76" smashed="yes">
+<instance part="C11" gate="G$1" x="0" y="111.76" smashed="yes">
 <attribute name="NAME" x="1.27" y="112.395" size="1.778" layer="95"/>
 <attribute name="VALUE" x="1.27" y="109.855" size="1.778" layer="96"/>
 </instance>
@@ -3945,36 +4082,36 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="+1V2" gate="G$1" x="106.68" y="71.12" smashed="yes">
 <attribute name="VALUE" x="104.14" y="71.12" size="1.778" layer="96"/>
 </instance>
-<instance part="IC5" gate="G$1" x="20.32" y="170.18" smashed="yes">
-<attribute name="NAME" x="12.7" y="177.8" size="1.778" layer="95"/>
-<attribute name="VALUE" x="22.86" y="162.56" size="1.778" layer="96"/>
+<instance part="IC5" gate="G$1" x="12.7" y="170.18" smashed="yes">
+<attribute name="NAME" x="5.08" y="177.8" size="1.778" layer="95"/>
+<attribute name="VALUE" x="15.24" y="162.56" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY11" gate="GND" x="20.32" y="157.48" smashed="yes"/>
-<instance part="FB5" gate="G$1" x="53.34" y="175.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="58.42" y="173.99" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="58.42" y="180.34" size="1.778" layer="96" rot="R180"/>
+<instance part="SUPPLY11" gate="GND" x="12.7" y="157.48" smashed="yes"/>
+<instance part="FB5" gate="G$1" x="45.72" y="175.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.8" y="173.99" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="50.8" y="180.34" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C20" gate="G$1" x="40.64" y="170.18" smashed="yes">
-<attribute name="NAME" x="41.91" y="170.815" size="1.778" layer="95"/>
-<attribute name="VALUE" x="41.91" y="168.275" size="1.778" layer="96"/>
+<instance part="C20" gate="G$1" x="33.02" y="170.18" smashed="yes">
+<attribute name="NAME" x="34.29" y="170.815" size="1.778" layer="95"/>
+<attribute name="VALUE" x="34.29" y="168.275" size="1.778" layer="96"/>
 </instance>
-<instance part="C26" gate="G$1" x="60.96" y="170.18" smashed="yes">
-<attribute name="NAME" x="62.23" y="170.815" size="1.778" layer="95"/>
-<attribute name="VALUE" x="62.23" y="168.275" size="1.778" layer="96"/>
+<instance part="C24" gate="G$1" x="53.34" y="170.18" smashed="yes">
+<attribute name="NAME" x="54.61" y="170.815" size="1.778" layer="95"/>
+<attribute name="VALUE" x="54.61" y="168.275" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY12" gate="GND" x="40.64" y="165.1" smashed="yes"/>
-<instance part="SUPPLY20" gate="GND" x="60.96" y="165.1" smashed="yes"/>
-<instance part="R3" gate="G$1" x="45.72" y="167.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="44.2214" y="163.83" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="49.022" y="163.83" size="1.778" layer="96" rot="R90"/>
+<instance part="SUPPLY12" gate="GND" x="33.02" y="165.1" smashed="yes"/>
+<instance part="SUPPLY20" gate="GND" x="53.34" y="165.1" smashed="yes"/>
+<instance part="R3" gate="G$1" x="38.1" y="167.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.6014" y="163.83" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="41.402" y="163.83" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R4" gate="G$1" x="45.72" y="157.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="44.2214" y="153.67" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="49.022" y="153.67" size="1.778" layer="96" rot="R90"/>
+<instance part="R4" gate="G$1" x="38.1" y="157.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.6014" y="153.67" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="41.402" y="153.67" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY46" gate="GND" x="45.72" y="149.86" smashed="yes"/>
-<instance part="P2" gate="G$1" x="66.04" y="180.34" smashed="yes">
-<attribute name="VALUE" x="63.5" y="180.34" size="1.778" layer="96"/>
+<instance part="SUPPLY46" gate="GND" x="38.1" y="149.86" smashed="yes"/>
+<instance part="P2" gate="G$1" x="58.42" y="180.34" smashed="yes">
+<attribute name="VALUE" x="55.88" y="180.34" size="1.778" layer="96"/>
 </instance>
 <instance part="+3V11" gate="G$1" x="-15.24" y="17.78" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-15.24" y="20.32" size="1.778" layer="96" rot="R270"/>
@@ -4013,7 +4150,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <attribute name="NAME" x="265.176" y="98.298" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="267.335" y="98.298" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R15" gate="G$1" x="261.62" y="93.98" smashed="yes" rot="R90">
+<instance part="R16" gate="G$1" x="261.62" y="93.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="260.1214" y="90.17" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="264.922" y="90.17" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -4022,34 +4159,34 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <attribute name="VALUE" x="141.605" y="121.285" size="1.778" layer="95"/>
 </instance>
 <instance part="SUPPLY39" gate="GND" x="134.62" y="119.38" smashed="yes"/>
-<instance part="IC3" gate="G$1" x="20.32" y="226.06" smashed="yes">
-<attribute name="NAME" x="12.7" y="232.41" size="1.778" layer="95"/>
-<attribute name="VALUE" x="22.86" y="220.98" size="1.778" layer="96"/>
+<instance part="IC3" gate="G$1" x="12.7" y="226.06" smashed="yes">
+<attribute name="NAME" x="5.08" y="232.41" size="1.778" layer="95"/>
+<attribute name="VALUE" x="15.24" y="220.98" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY47" gate="GND" x="20.32" y="215.9" smashed="yes"/>
-<instance part="FB3" gate="G$1" x="43.18" y="228.6" smashed="yes" rot="R90">
-<attribute name="NAME" x="48.26" y="227.33" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="48.26" y="233.68" size="1.778" layer="96" rot="R180"/>
+<instance part="SUPPLY47" gate="GND" x="12.7" y="215.9" smashed="yes"/>
+<instance part="FB3" gate="G$1" x="35.56" y="228.6" smashed="yes" rot="R90">
+<attribute name="NAME" x="40.64" y="227.33" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="40.64" y="233.68" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C18" gate="G$1" x="35.56" y="223.52" smashed="yes">
-<attribute name="NAME" x="36.83" y="224.155" size="1.778" layer="95"/>
-<attribute name="VALUE" x="36.83" y="221.615" size="1.778" layer="96"/>
+<instance part="C18" gate="G$1" x="27.94" y="223.52" smashed="yes">
+<attribute name="NAME" x="29.21" y="224.155" size="1.778" layer="95"/>
+<attribute name="VALUE" x="29.21" y="221.615" size="1.778" layer="96"/>
 </instance>
-<instance part="C22" gate="G$1" x="50.8" y="223.52" smashed="yes">
-<attribute name="NAME" x="52.07" y="224.155" size="1.778" layer="95"/>
-<attribute name="VALUE" x="52.07" y="221.615" size="1.778" layer="96"/>
+<instance part="C22" gate="G$1" x="43.18" y="223.52" smashed="yes">
+<attribute name="NAME" x="44.45" y="224.155" size="1.778" layer="95"/>
+<attribute name="VALUE" x="44.45" y="221.615" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY48" gate="GND" x="35.56" y="218.44" smashed="yes"/>
-<instance part="SUPPLY65" gate="GND" x="50.8" y="218.44" smashed="yes"/>
-<instance part="C12" gate="G$1" x="5.08" y="223.52" smashed="yes" rot="MR0">
-<attribute name="NAME" x="3.81" y="224.155" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="3.81" y="221.615" size="1.778" layer="96" rot="MR0"/>
+<instance part="SUPPLY48" gate="GND" x="27.94" y="218.44" smashed="yes"/>
+<instance part="SUPPLY65" gate="GND" x="43.18" y="218.44" smashed="yes"/>
+<instance part="C10" gate="G$1" x="-2.54" y="223.52" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-3.81" y="224.155" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="-3.81" y="221.615" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="SUPPLY66" gate="GND" x="5.08" y="218.44" smashed="yes"/>
-<instance part="+2V1" gate="G$1" x="55.88" y="233.68" smashed="yes">
-<attribute name="VALUE" x="53.34" y="233.68" size="1.778" layer="96"/>
+<instance part="SUPPLY66" gate="GND" x="-2.54" y="218.44" smashed="yes"/>
+<instance part="+2V1" gate="G$1" x="48.26" y="233.68" smashed="yes">
+<attribute name="VALUE" x="45.72" y="233.68" size="1.778" layer="96"/>
 </instance>
-<instance part="R20" gate="G$1" x="434.34" y="248.92" smashed="yes" rot="R90">
+<instance part="R21" gate="G$1" x="434.34" y="248.92" smashed="yes" rot="R90">
 <attribute name="NAME" x="432.8414" y="245.11" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="437.642" y="245.11" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -4073,52 +4210,52 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="+3V20" gate="G$1" x="40.64" y="96.52" smashed="yes">
 <attribute name="VALUE" x="38.1" y="96.52" size="1.778" layer="96"/>
 </instance>
-<instance part="C23" gate="G$1" x="58.42" y="99.06" smashed="yes">
+<instance part="C27" gate="G$1" x="58.42" y="99.06" smashed="yes">
 <attribute name="NAME" x="59.69" y="99.695" size="1.778" layer="95"/>
 <attribute name="VALUE" x="59.69" y="97.155" size="1.778" layer="96"/>
 </instance>
-<instance part="C24" gate="G$1" x="58.42" y="83.82" smashed="yes">
+<instance part="C28" gate="G$1" x="58.42" y="83.82" smashed="yes">
 <attribute name="NAME" x="59.69" y="84.455" size="1.778" layer="95"/>
 <attribute name="VALUE" x="59.69" y="81.915" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY67" gate="GND" x="58.42" y="93.98" smashed="yes"/>
 <instance part="SUPPLY69" gate="GND" x="58.42" y="78.74" smashed="yes"/>
-<instance part="C27" gate="G$1" x="66.04" y="99.06" smashed="yes">
+<instance part="C31" gate="G$1" x="66.04" y="99.06" smashed="yes">
 <attribute name="NAME" x="67.31" y="99.695" size="1.778" layer="95"/>
 <attribute name="VALUE" x="67.31" y="97.155" size="1.778" layer="96"/>
 </instance>
-<instance part="C29" gate="G$1" x="71.12" y="99.06" smashed="yes">
+<instance part="C33" gate="G$1" x="71.12" y="99.06" smashed="yes">
 <attribute name="NAME" x="72.39" y="99.695" size="1.778" layer="95"/>
 <attribute name="VALUE" x="72.39" y="97.155" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY76" gate="GND" x="66.04" y="93.98" smashed="yes"/>
 <instance part="SUPPLY77" gate="GND" x="71.12" y="93.98" smashed="yes"/>
-<instance part="C28" gate="G$1" x="66.04" y="83.82" smashed="yes">
+<instance part="C32" gate="G$1" x="66.04" y="83.82" smashed="yes">
 <attribute name="NAME" x="67.31" y="84.455" size="1.778" layer="95"/>
 <attribute name="VALUE" x="67.31" y="81.915" size="1.778" layer="96"/>
 </instance>
-<instance part="C30" gate="G$1" x="71.12" y="83.82" smashed="yes">
+<instance part="C34" gate="G$1" x="71.12" y="83.82" smashed="yes">
 <attribute name="NAME" x="72.39" y="84.455" size="1.778" layer="95"/>
 <attribute name="VALUE" x="72.39" y="81.915" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY78" gate="GND" x="66.04" y="78.74" smashed="yes"/>
 <instance part="SUPPLY79" gate="GND" x="71.12" y="78.74" smashed="yes"/>
-<instance part="C2" gate="G$1" x="-15.24" y="200.66" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-16.51" y="201.295" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="-16.51" y="198.755" size="1.778" layer="96" rot="MR0"/>
+<instance part="C2" gate="G$1" x="-22.86" y="200.66" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-24.13" y="201.295" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="-24.13" y="198.755" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="SUPPLY80" gate="GND" x="-15.24" y="195.58" smashed="yes"/>
+<instance part="SUPPLY80" gate="GND" x="-22.86" y="195.58" smashed="yes"/>
 <instance part="C7" gate="G$1" x="-5.08" y="111.76" smashed="yes">
 <attribute name="NAME" x="-3.81" y="112.395" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-3.81" y="109.855" size="1.778" layer="96"/>
 </instance>
-<instance part="C4" gate="G$1" x="-10.16" y="111.76" smashed="yes">
+<instance part="C5" gate="G$1" x="-10.16" y="111.76" smashed="yes">
 <attribute name="NAME" x="-8.89" y="112.395" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-8.89" y="109.855" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY81" gate="GND" x="-10.16" y="106.68" smashed="yes"/>
 <instance part="SUPPLY88" gate="GND" x="-5.08" y="106.68" smashed="yes"/>
-<instance part="C5" gate="G$1" x="-10.16" y="93.98" smashed="yes">
+<instance part="C6" gate="G$1" x="-10.16" y="93.98" smashed="yes">
 <attribute name="NAME" x="-8.89" y="94.615" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-8.89" y="92.075" size="1.778" layer="96"/>
 </instance>
@@ -4126,15 +4263,15 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="+1V7" gate="G$1" x="93.98" y="109.22" smashed="yes">
 <attribute name="VALUE" x="91.44" y="109.22" size="1.778" layer="96"/>
 </instance>
-<instance part="C32" gate="G$1" x="93.98" y="101.6" smashed="yes">
+<instance part="C36" gate="G$1" x="93.98" y="101.6" smashed="yes">
 <attribute name="NAME" x="95.25" y="102.235" size="1.778" layer="95"/>
 <attribute name="VALUE" x="95.25" y="99.695" size="1.778" layer="96"/>
 </instance>
-<instance part="C34" gate="G$1" x="99.06" y="101.6" smashed="yes">
+<instance part="C38" gate="G$1" x="99.06" y="101.6" smashed="yes">
 <attribute name="NAME" x="100.33" y="102.235" size="1.778" layer="95"/>
 <attribute name="VALUE" x="100.33" y="99.695" size="1.778" layer="96"/>
 </instance>
-<instance part="C36" gate="G$1" x="104.14" y="101.6" smashed="yes">
+<instance part="C40" gate="G$1" x="104.14" y="101.6" smashed="yes">
 <attribute name="NAME" x="105.41" y="102.235" size="1.778" layer="95"/>
 <attribute name="VALUE" x="105.41" y="99.695" size="1.778" layer="96"/>
 </instance>
@@ -4144,19 +4281,19 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="+3V16" gate="G$1" x="93.98" y="91.44" smashed="yes">
 <attribute name="VALUE" x="91.44" y="91.44" size="1.778" layer="96"/>
 </instance>
-<instance part="C33" gate="G$1" x="93.98" y="83.82" smashed="yes">
+<instance part="C37" gate="G$1" x="93.98" y="83.82" smashed="yes">
 <attribute name="NAME" x="95.25" y="84.455" size="1.778" layer="95"/>
 <attribute name="VALUE" x="95.25" y="81.915" size="1.778" layer="96"/>
 </instance>
-<instance part="C35" gate="G$1" x="99.06" y="83.82" smashed="yes">
+<instance part="C39" gate="G$1" x="99.06" y="83.82" smashed="yes">
 <attribute name="NAME" x="100.33" y="84.455" size="1.778" layer="95"/>
 <attribute name="VALUE" x="100.33" y="81.915" size="1.778" layer="96"/>
 </instance>
-<instance part="C37" gate="G$1" x="104.14" y="83.82" smashed="yes">
+<instance part="C41" gate="G$1" x="104.14" y="83.82" smashed="yes">
 <attribute name="NAME" x="105.41" y="84.455" size="1.778" layer="95"/>
 <attribute name="VALUE" x="105.41" y="81.915" size="1.778" layer="96"/>
 </instance>
-<instance part="C38" gate="G$1" x="109.22" y="83.82" smashed="yes">
+<instance part="C42" gate="G$1" x="109.22" y="83.82" smashed="yes">
 <attribute name="NAME" x="110.49" y="84.455" size="1.778" layer="95"/>
 <attribute name="VALUE" x="110.49" y="81.915" size="1.778" layer="96"/>
 </instance>
@@ -4164,12 +4301,12 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="SUPPLY100" gate="GND" x="99.06" y="78.74" smashed="yes"/>
 <instance part="SUPPLY101" gate="GND" x="104.14" y="78.74" smashed="yes"/>
 <instance part="SUPPLY102" gate="GND" x="109.22" y="78.74" smashed="yes"/>
-<instance part="C39" gate="G$1" x="114.3" y="83.82" smashed="yes">
+<instance part="C43" gate="G$1" x="114.3" y="83.82" smashed="yes">
 <attribute name="NAME" x="115.57" y="84.455" size="1.778" layer="95"/>
 <attribute name="VALUE" x="115.57" y="81.915" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY103" gate="GND" x="114.3" y="78.74" smashed="yes"/>
-<instance part="C31" gate="G$1" x="76.2" y="83.82" smashed="yes">
+<instance part="C35" gate="G$1" x="76.2" y="83.82" smashed="yes">
 <attribute name="NAME" x="77.47" y="84.455" size="1.778" layer="95"/>
 <attribute name="VALUE" x="77.47" y="81.915" size="1.778" layer="96"/>
 </instance>
@@ -4206,16 +4343,50 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <attribute name="VALUE" x="12.7" y="119.38" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY106" gate="GND" x="15.24" y="106.68" smashed="yes"/>
-<instance part="C53" gate="G$1" x="66.04" y="170.18" smashed="yes">
-<attribute name="NAME" x="67.31" y="170.815" size="1.778" layer="95"/>
-<attribute name="VALUE" x="67.31" y="168.275" size="1.778" layer="96"/>
+<instance part="C26" gate="G$1" x="58.42" y="170.18" smashed="yes">
+<attribute name="NAME" x="59.69" y="170.815" size="1.778" layer="95"/>
+<attribute name="VALUE" x="59.69" y="168.275" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY105" gate="GND" x="66.04" y="165.1" smashed="yes"/>
-<instance part="C54" gate="G$1" x="66.04" y="200.66" smashed="yes">
-<attribute name="NAME" x="67.31" y="201.295" size="1.778" layer="95"/>
-<attribute name="VALUE" x="67.31" y="198.755" size="1.778" layer="96"/>
+<instance part="SUPPLY105" gate="GND" x="58.42" y="165.1" smashed="yes"/>
+<instance part="C25" gate="G$1" x="58.42" y="200.66" smashed="yes">
+<attribute name="NAME" x="59.69" y="201.295" size="1.778" layer="95"/>
+<attribute name="VALUE" x="59.69" y="198.755" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY107" gate="GND" x="66.04" y="195.58" smashed="yes"/>
+<instance part="SUPPLY107" gate="GND" x="58.42" y="195.58" smashed="yes"/>
+<instance part="X1" gate="G$1" x="251.46" y="58.42" smashed="yes">
+<attribute name="NAME" x="245.11" y="64.77" size="1.778" layer="95"/>
+<attribute name="VALUE" x="245.11" y="50.8" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY108" gate="GND" x="238.76" y="53.34" smashed="yes"/>
+<instance part="J3" gate="G$1" x="269.24" y="55.88" smashed="yes">
+<attribute name="NAME" x="266.7" y="58.42" size="1.778" layer="95"/>
+<attribute name="VALUE" x="266.7" y="52.07" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V22" gate="G$1" x="238.76" y="63.5" smashed="yes">
+<attribute name="VALUE" x="236.22" y="63.5" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V23" gate="G$1" x="264.16" y="63.5" smashed="yes">
+<attribute name="VALUE" x="261.62" y="63.5" size="1.778" layer="96"/>
+</instance>
+<instance part="C45" gate="G$1" x="236.22" y="58.42" smashed="yes" rot="MR0">
+<attribute name="NAME" x="234.95" y="59.055" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="234.95" y="56.515" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="C30" gate="G$1" x="63.5" y="170.18" smashed="yes">
+<attribute name="NAME" x="64.77" y="170.815" size="1.778" layer="95"/>
+<attribute name="VALUE" x="64.77" y="168.275" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY109" gate="GND" x="63.5" y="165.1" smashed="yes"/>
+<instance part="C29" gate="G$1" x="63.5" y="200.66" smashed="yes">
+<attribute name="NAME" x="64.77" y="201.295" size="1.778" layer="95"/>
+<attribute name="VALUE" x="64.77" y="198.755" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY110" gate="GND" x="63.5" y="195.58" smashed="yes"/>
+<instance part="R6" gate="G$1" x="129.54" y="116.84" smashed="yes" rot="R90">
+<attribute name="NAME" x="128.0414" y="113.03" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="132.842" y="113.03" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY111" gate="GND" x="129.54" y="109.22" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -4226,27 +4397,27 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="SUPPLY18" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C40" gate="G$1" pin="2"/>
+<pinref part="C44" gate="G$1" pin="2"/>
 <pinref part="SUPPLY19" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="SUPPLY36" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="SUPPLY37" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="SUPPLY38" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="R20" gate="G$1" pin="1"/>
 <pinref part="SUPPLY61" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C47" gate="G$1" pin="2"/>
+<pinref part="C52" gate="G$1" pin="2"/>
 <pinref part="SUPPLY21" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4263,11 +4434,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="SUPPLY23" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C45" gate="G$1" pin="2"/>
+<pinref part="C50" gate="G$1" pin="2"/>
 <pinref part="SUPPLY24" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C46" gate="G$1" pin="2"/>
+<pinref part="C51" gate="G$1" pin="2"/>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4275,7 +4446,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="SUPPLY26" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="SUPPLY27" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4295,11 +4466,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="SUPPLY32" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C41" gate="G$1" pin="2"/>
+<pinref part="C46" gate="G$1" pin="2"/>
 <pinref part="SUPPLY33" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="X1" gate="G$1" pin="GND"/>
+<pinref part="X2" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY35" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4311,7 +4482,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="SUPPLY57" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C51" gate="G$1" pin="2"/>
+<pinref part="C56" gate="G$1" pin="2"/>
 <pinref part="SUPPLY58" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4355,27 +4526,27 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="124.46" y1="180.34" x2="119.38" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C52" gate="G$1" pin="2"/>
+<pinref part="C57" gate="G$1" pin="2"/>
 <pinref part="SUPPLY50" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C42" gate="G$1" pin="2"/>
+<pinref part="C47" gate="G$1" pin="2"/>
 <pinref part="SUPPLY51" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C43" gate="G$1" pin="2"/>
+<pinref part="C48" gate="G$1" pin="2"/>
 <pinref part="SUPPLY52" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C48" gate="G$1" pin="2"/>
+<pinref part="C53" gate="G$1" pin="2"/>
 <pinref part="SUPPLY53" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C49" gate="G$1" pin="2"/>
+<pinref part="C54" gate="G$1" pin="2"/>
 <pinref part="SUPPLY54" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C44" gate="G$1" pin="2"/>
+<pinref part="C49" gate="G$1" pin="2"/>
 <pinref part="SUPPLY55" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4387,7 +4558,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="SUPPLY45" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C25" gate="G$1" pin="2"/>
+<pinref part="C23" gate="G$1" pin="2"/>
 <pinref part="SUPPLY49" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4407,7 +4578,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="SUPPLY72" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="C9" gate="G$1" pin="2"/>
 <pinref part="SUPPLY73" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4455,11 +4626,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="SUPPLY84" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="SUPPLY85" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C50" gate="G$1" pin="2"/>
+<pinref part="C55" gate="G$1" pin="2"/>
 <pinref part="SUPPLY86" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4485,7 +4656,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C10" gate="G$1" pin="2"/>
+<pinref part="C12" gate="G$1" pin="2"/>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4493,7 +4664,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C9" gate="G$1" pin="2"/>
+<pinref part="C11" gate="G$1" pin="2"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4513,7 +4684,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C26" gate="G$1" pin="2"/>
+<pinref part="C24" gate="G$1" pin="2"/>
 <pinref part="SUPPLY20" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4573,7 +4744,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 <pinref part="SUPPLY34" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4593,31 +4764,31 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="SUPPLY65" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C12" gate="G$1" pin="2"/>
+<pinref part="C10" gate="G$1" pin="2"/>
 <pinref part="SUPPLY66" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C23" gate="G$1" pin="2"/>
+<pinref part="C27" gate="G$1" pin="2"/>
 <pinref part="SUPPLY67" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C24" gate="G$1" pin="2"/>
+<pinref part="C28" gate="G$1" pin="2"/>
 <pinref part="SUPPLY69" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C27" gate="G$1" pin="2"/>
+<pinref part="C31" gate="G$1" pin="2"/>
 <pinref part="SUPPLY76" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C29" gate="G$1" pin="2"/>
+<pinref part="C33" gate="G$1" pin="2"/>
 <pinref part="SUPPLY77" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C28" gate="G$1" pin="2"/>
+<pinref part="C32" gate="G$1" pin="2"/>
 <pinref part="SUPPLY78" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C30" gate="G$1" pin="2"/>
+<pinref part="C34" gate="G$1" pin="2"/>
 <pinref part="SUPPLY79" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4625,7 +4796,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="SUPPLY80" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="SUPPLY81" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4633,43 +4804,43 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="SUPPLY88" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="SUPPLY89" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C32" gate="G$1" pin="2"/>
+<pinref part="C36" gate="G$1" pin="2"/>
 <pinref part="SUPPLY96" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C34" gate="G$1" pin="2"/>
+<pinref part="C38" gate="G$1" pin="2"/>
 <pinref part="SUPPLY97" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C36" gate="G$1" pin="2"/>
+<pinref part="C40" gate="G$1" pin="2"/>
 <pinref part="SUPPLY98" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C33" gate="G$1" pin="2"/>
+<pinref part="C37" gate="G$1" pin="2"/>
 <pinref part="SUPPLY99" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C35" gate="G$1" pin="2"/>
+<pinref part="C39" gate="G$1" pin="2"/>
 <pinref part="SUPPLY100" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C37" gate="G$1" pin="2"/>
+<pinref part="C41" gate="G$1" pin="2"/>
 <pinref part="SUPPLY101" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C38" gate="G$1" pin="2"/>
+<pinref part="C42" gate="G$1" pin="2"/>
 <pinref part="SUPPLY102" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C39" gate="G$1" pin="2"/>
+<pinref part="C43" gate="G$1" pin="2"/>
 <pinref part="SUPPLY103" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C31" gate="G$1" pin="2"/>
+<pinref part="C35" gate="G$1" pin="2"/>
 <pinref part="SUPPLY104" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4677,12 +4848,31 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="SUPPLY106" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C53" gate="G$1" pin="2"/>
+<pinref part="C26" gate="G$1" pin="2"/>
 <pinref part="SUPPLY105" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C54" gate="G$1" pin="2"/>
+<pinref part="C25" gate="G$1" pin="2"/>
 <pinref part="SUPPLY107" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY108" gate="GND" pin="GND"/>
+<pinref part="C45" gate="G$1" pin="2"/>
+<wire x1="236.22" y1="55.88" x2="238.76" y2="55.88" width="0.1524" layer="91"/>
+<junction x="238.76" y="55.88"/>
+</segment>
+<segment>
+<pinref part="C30" gate="G$1" pin="2"/>
+<pinref part="SUPPLY109" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C29" gate="G$1" pin="2"/>
+<pinref part="SUPPLY110" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="SUPPLY111" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="+1V8" class="0">
@@ -4693,16 +4883,19 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="FB4" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="205.74" x2="60.96" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="205.74" x2="53.34" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="+1V4" gate="G$1" pin="+1V8"/>
-<wire x1="60.96" y1="205.74" x2="66.04" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="205.74" x2="66.04" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="205.74" x2="58.42" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="205.74" x2="58.42" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="C23" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="203.2" x2="53.34" y2="205.74" width="0.1524" layer="91"/>
+<junction x="53.34" y="205.74"/>
 <pinref part="C25" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="203.2" x2="60.96" y2="205.74" width="0.1524" layer="91"/>
-<junction x="60.96" y="205.74"/>
-<pinref part="C54" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="205.74" x2="66.04" y2="203.2" width="0.1524" layer="91"/>
-<junction x="66.04" y="205.74"/>
+<wire x1="58.42" y1="205.74" x2="58.42" y2="203.2" width="0.1524" layer="91"/>
+<junction x="58.42" y="205.74"/>
+<wire x1="58.42" y1="205.74" x2="63.5" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="C29" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="205.74" x2="63.5" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="FB7" gate="G$1" pin="1"/>
@@ -4722,13 +4915,13 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <junction x="-15.24" y="96.52"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <junction x="-5.08" y="96.52"/>
-<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="C12" gate="G$1" pin="1"/>
 <junction x="0" y="96.52"/>
 <pinref part="C14" gate="G$1" pin="1"/>
 <pinref part="+1V1" gate="G$1" pin="+1V8"/>
 <wire x1="5.08" y1="99.06" x2="5.08" y2="96.52" width="0.1524" layer="91"/>
 <junction x="5.08" y="96.52"/>
-<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C6" gate="G$1" pin="1"/>
 <junction x="-10.16" y="96.52"/>
 </segment>
 <segment>
@@ -4738,12 +4931,12 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="+1V7" gate="G$1" pin="+1V8"/>
-<pinref part="C32" gate="G$1" pin="1"/>
+<pinref part="C36" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="106.68" x2="93.98" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C34" gate="G$1" pin="1"/>
+<pinref part="C38" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="104.14" x2="99.06" y2="104.14" width="0.1524" layer="91"/>
 <junction x="93.98" y="104.14"/>
-<pinref part="C36" gate="G$1" pin="1"/>
+<pinref part="C40" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="104.14" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
 <junction x="99.06" y="104.14"/>
 </segment>
@@ -4782,7 +4975,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="5.08" y1="114.3" x2="10.16" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="101.6" x2="-15.24" y2="101.6" width="0.1524" layer="91"/>
 <junction x="-15.24" y="101.6"/>
-<pinref part="C9" gate="G$1" pin="1"/>
+<pinref part="C11" gate="G$1" pin="1"/>
 <junction x="0" y="114.3"/>
 <pinref part="C13" gate="G$1" pin="1"/>
 <junction x="5.08" y="114.3"/>
@@ -4790,7 +4983,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <junction x="10.16" y="114.3"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <junction x="-5.08" y="114.3"/>
-<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 <junction x="-10.16" y="114.3"/>
 <pinref part="C16" gate="G$1" pin="1"/>
 <wire x1="10.16" y1="114.3" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
@@ -4800,16 +4993,19 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="FB5" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="175.26" x2="60.96" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="175.26" x2="66.04" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="175.26" x2="66.04" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="C26" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="172.72" x2="60.96" y2="175.26" width="0.1524" layer="91"/>
-<junction x="60.96" y="175.26"/>
+<wire x1="50.8" y1="175.26" x2="53.34" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="175.26" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="175.26" x2="58.42" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="172.72" x2="53.34" y2="175.26" width="0.1524" layer="91"/>
+<junction x="53.34" y="175.26"/>
 <pinref part="P2" gate="G$1" pin="+1V0"/>
-<pinref part="C53" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="172.72" x2="66.04" y2="175.26" width="0.1524" layer="91"/>
-<junction x="66.04" y="175.26"/>
+<pinref part="C26" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="172.72" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
+<junction x="58.42" y="175.26"/>
+<pinref part="C30" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="172.72" x2="63.5" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="175.26" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FLASH_CS" class="0">
@@ -4821,7 +5017,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <segment>
 <wire x1="195.58" y1="127" x2="187.96" y2="127" width="0.1524" layer="91"/>
 <label x="170.18" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="187.96" y1="127" x2="170.18" y2="127" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="137.16" x2="187.96" y2="127" width="0.1524" layer="91"/>
 <junction x="187.96" y="127"/>
@@ -4926,6 +5122,9 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="132.08" y1="127" x2="129.54" y2="127" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="127" x2="124.46" y2="127" width="0.1524" layer="91"/>
 <pinref part="TP3" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="121.92" x2="129.54" y2="127" width="0.1524" layer="91"/>
+<junction x="129.54" y="127"/>
 </segment>
 <segment>
 <pinref part="IC8" gate="G$1" pin="BDBUS0"/>
@@ -4942,7 +5141,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <segment>
 <wire x1="134.62" y1="132.08" x2="132.08" y2="132.08" width="0.1524" layer="91"/>
 <label x="124.46" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="132.08" x2="124.46" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="137.16" x2="132.08" y2="132.08" width="0.1524" layer="91"/>
 <junction x="132.08" y="132.08"/>
@@ -4963,7 +5162,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <segment>
 <wire x1="195.58" y1="132.08" x2="182.88" y2="132.08" width="0.1524" layer="91"/>
 <label x="170.18" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="132.08" x2="170.18" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="137.16" x2="182.88" y2="132.08" width="0.1524" layer="91"/>
 <junction x="182.88" y="132.08"/>
@@ -4976,19 +5175,19 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 <pinref part="D2" gate="G$1" pin="K"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="D3" gate="G$1" pin="K"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="D4" gate="G$1" pin="K"/>
 </segment>
 </net>
@@ -5039,7 +5238,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="+3V7" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="127" y1="147.32" x2="129.54" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="147.32" x2="132.08" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
@@ -5048,14 +5247,14 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="147.32" x2="177.8" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="147.32" x2="180.34" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="147.32" x2="182.88" y2="147.32" width="0.1524" layer="91"/>
 <junction x="182.88" y="147.32"/>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 <junction x="177.8" y="147.32"/>
 <wire x1="187.96" y1="147.32" x2="182.88" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="147.32" x2="180.34" y2="149.86" width="0.1524" layer="91"/>
@@ -5074,17 +5273,17 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="C21" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="246.38" x2="50.8" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="246.38" x2="43.18" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="FB2" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="248.92" x2="48.26" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="248.92" x2="40.64" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<wire x1="50.8" y1="248.92" x2="55.88" y2="248.92" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="248.92" x2="55.88" y2="251.46" width="0.1524" layer="91"/>
-<junction x="50.8" y="248.92"/>
+<wire x1="43.18" y1="248.92" x2="48.26" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="248.92" x2="48.26" y2="251.46" width="0.1524" layer="91"/>
+<junction x="43.18" y="248.92"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="G$1" pin="VCC"/>
-<pinref part="C40" gate="G$1" pin="1"/>
+<pinref part="C44" gate="G$1" pin="1"/>
 <wire x1="187.96" y1="101.6" x2="190.5" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="101.6" x2="193.04" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="101.6" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
@@ -5149,17 +5348,17 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="+3V16" gate="G$1" pin="+3V3"/>
 <wire x1="93.98" y1="88.9" x2="93.98" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="86.36" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="C33" gate="G$1" pin="1"/>
+<pinref part="C37" gate="G$1" pin="1"/>
 <junction x="93.98" y="86.36"/>
-<pinref part="C35" gate="G$1" pin="1"/>
+<pinref part="C39" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="86.36" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
 <junction x="99.06" y="86.36"/>
-<pinref part="C37" gate="G$1" pin="1"/>
+<pinref part="C41" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
 <junction x="104.14" y="86.36"/>
-<pinref part="C38" gate="G$1" pin="1"/>
+<pinref part="C42" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="86.36" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="C39" gate="G$1" pin="1"/>
+<pinref part="C43" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="86.36" x2="114.3" y2="86.36" width="0.1524" layer="91"/>
 <junction x="109.22" y="86.36"/>
 </segment>
@@ -5173,10 +5372,21 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="177.8" y1="190.5" x2="172.72" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="+3V21" gate="G$1" pin="+3V3"/>
 </segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="VCC"/>
+<pinref part="+3V22" gate="G$1" pin="+3V3"/>
+<pinref part="C45" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="60.96" x2="236.22" y2="60.96" width="0.1524" layer="91"/>
+<junction x="238.76" y="60.96"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="EN"/>
+<pinref part="+3V23" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="R20" gate="G$1" pin="2"/>
 <pinref part="D6" gate="G$1" pin="K"/>
 </segment>
 </net>
@@ -5191,11 +5401,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="IC8" gate="G$1" pin="VCORE1"/>
 <wire x1="307.34" y1="243.84" x2="307.34" y2="246.38" width="0.1524" layer="91"/>
 <junction x="307.34" y="246.38"/>
-<pinref part="C47" gate="G$1" pin="1"/>
+<pinref part="C52" gate="G$1" pin="1"/>
 <label x="271.78" y="246.38" size="1.778" layer="95"/>
-<pinref part="C48" gate="G$1" pin="1"/>
+<pinref part="C53" gate="G$1" pin="1"/>
 <junction x="274.32" y="246.38"/>
-<pinref part="C49" gate="G$1" pin="1"/>
+<pinref part="C54" gate="G$1" pin="1"/>
 <junction x="279.4" y="246.38"/>
 <wire x1="269.24" y1="246.38" x2="264.16" y2="246.38" width="0.1524" layer="91"/>
 <junction x="269.24" y="246.38"/>
@@ -5231,19 +5441,19 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="251.46" y1="251.46" x2="246.38" y2="251.46" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="251.46" x2="243.84" y2="251.46" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="251.46" x2="241.3" y2="251.46" width="0.1524" layer="91"/>
-<pinref part="C41" gate="G$1" pin="1"/>
+<pinref part="C46" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="251.46" x2="233.68" y2="251.46" width="0.1524" layer="91"/>
 <junction x="241.3" y="251.46"/>
 <pinref part="FB6" gate="G$1" pin="2"/>
-<pinref part="C42" gate="G$1" pin="1"/>
+<pinref part="C47" gate="G$1" pin="1"/>
 <junction x="246.38" y="251.46"/>
-<pinref part="C43" gate="G$1" pin="1"/>
+<pinref part="C48" gate="G$1" pin="1"/>
 <junction x="251.46" y="251.46"/>
-<pinref part="C44" gate="G$1" pin="1"/>
+<pinref part="C49" gate="G$1" pin="1"/>
 <junction x="256.54" y="251.46"/>
 </segment>
 <segment>
-<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="243.84" y1="198.12" x2="223.52" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="198.12" x2="223.52" y2="196.85" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="196.85" x2="223.52" y2="190.5" width="0.1524" layer="91"/>
@@ -5253,7 +5463,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="223.52" y="200.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="266.7" y1="203.2" x2="264.16" y2="203.2" width="0.1524" layer="91"/>
 <label x="264.16" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -5272,7 +5482,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="IC8" gate="G$1" pin="EEDATA"/>
 <wire x1="254" y1="187.96" x2="271.78" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="DI"/>
-<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="271.78" y1="187.96" x2="276.86" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="185.42" x2="271.78" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="185.42" x2="271.78" y2="186.69" width="0.1524" layer="91"/>
@@ -5291,25 +5501,25 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="259.08" y1="185.42" x2="256.54" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="185.42" x2="254" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="185.42" x2="256.54" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="198.12" x2="255.27" y2="198.12" width="0.1524" layer="91"/>
 <junction x="256.54" y="185.42"/>
-<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="254" y1="198.12" x2="255.27" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="DO"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="C46" gate="G$1" pin="1"/>
+<pinref part="C51" gate="G$1" pin="1"/>
 <pinref part="IC8" gate="G$1" pin="OSCO"/>
 <wire x1="264.16" y1="170.18" x2="264.16" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="172.72" x2="264.16" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="175.26" x2="276.86" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="2"/>
+<pinref part="X2" gate="G$1" pin="2"/>
 <junction x="264.16" y="172.72"/>
 </segment>
 </net>
@@ -5317,22 +5527,22 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <segment>
 <pinref part="IC8" gate="G$1" pin="OSCI"/>
 <wire x1="276.86" y1="177.8" x2="259.08" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="C45" gate="G$1" pin="1"/>
+<pinref part="C50" gate="G$1" pin="1"/>
 <wire x1="259.08" y1="177.8" x2="259.08" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="172.72" x2="259.08" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="1"/>
+<pinref part="X2" gate="G$1" pin="1"/>
 <junction x="259.08" y="172.72"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="IC8" gate="G$1" pin="REF"/>
-<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="R18" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="R19" gate="G$1" pin="2"/>
 <pinref part="IC8" gate="G$1" pin="RESET#"/>
 </segment>
 </net>
@@ -5354,10 +5564,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <junction x="431.8" y="233.68"/>
 <pinref part="FB8" gate="G$1" pin="1"/>
 <label x="436.88" y="233.68" size="1.778" layer="95"/>
-<pinref part="C51" gate="G$1" pin="1"/>
-<pinref part="C52" gate="G$1" pin="1"/>
+<pinref part="C56" gate="G$1" pin="1"/>
+<pinref part="C57" gate="G$1" pin="1"/>
 <junction x="447.04" y="233.68"/>
-<pinref part="C50" gate="G$1" pin="1"/>
+<pinref part="C55" gate="G$1" pin="1"/>
 <wire x1="447.04" y1="234.95" x2="447.04" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="431.8" y1="233.68" x2="436.88" y2="233.68" width="0.1524" layer="91"/>
 <junction x="436.88" y="233.68"/>
@@ -5366,7 +5576,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="441.96" y1="233.68" x2="447.04" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R20" gate="G$1" pin="2"/>
+<pinref part="R21" gate="G$1" pin="2"/>
 <wire x1="434.34" y1="254" x2="436.88" y2="254" width="0.1524" layer="91"/>
 <label x="436.88" y="254" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -5680,9 +5890,9 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="347.98" y="200.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$3" pin="IO_L13P_T2_MRCC_14"/>
-<wire x1="48.26" y1="-2.54" x2="50.8" y2="-2.54" width="0.1524" layer="91"/>
-<label x="50.8" y="-2.54" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC1" gate="G$3" pin="IO_L14P_T2_SRCC_14"/>
+<wire x1="48.26" y1="-7.62" x2="50.8" y2="-7.62" width="0.1524" layer="91"/>
+<label x="50.8" y="-7.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="FT_NOE" class="0">
@@ -5724,7 +5934,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="434.34" y1="243.84" x2="435.61" y2="243.84" width="0.1524" layer="91"/>
 <wire x1="435.61" y1="243.84" x2="436.88" y2="243.84" width="0.1524" layer="91"/>
 <label x="436.88" y="243.84" size="1.27" layer="95" xref="yes"/>
-<pinref part="R20" gate="G$1" pin="1"/>
+<pinref part="R21" gate="G$1" pin="1"/>
 <junction x="434.34" y="243.84"/>
 </segment>
 </net>
@@ -5761,25 +5971,25 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="-45.72" y1="215.9" x2="-46.99" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="-46.99" y1="215.9" x2="-48.26" y2="215.9" width="0.1524" layer="91"/>
-<label x="-48.26" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-53.34" y1="215.9" x2="-54.61" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="-54.61" y1="215.9" x2="-55.88" y2="215.9" width="0.1524" layer="91"/>
+<label x="-55.88" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="+1V8_DCDC" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="OUT"/>
-<wire x1="33.02" y1="205.74" x2="40.64" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="205.74" x2="33.02" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="FB4" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="205.74" x2="41.91" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="41.91" y1="205.74" x2="45.72" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="205.74" x2="34.29" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="34.29" y1="205.74" x2="38.1" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="C19" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="205.74" x2="48.26" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="203.2" x2="40.64" y2="205.74" width="0.1524" layer="91"/>
-<junction x="40.64" y="205.74"/>
+<wire x1="38.1" y1="205.74" x2="40.64" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="203.2" x2="33.02" y2="205.74" width="0.1524" layer="91"/>
+<junction x="33.02" y="205.74"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="203.2" x2="45.72" y2="205.74" width="0.1524" layer="91"/>
-<junction x="45.72" y="205.74"/>
+<wire x1="38.1" y1="203.2" x2="38.1" y2="205.74" width="0.1524" layer="91"/>
+<junction x="38.1" y="205.74"/>
 </segment>
 </net>
 <net name="+1V8_DCDC_FB" class="0">
@@ -5787,27 +5997,27 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="IC4" gate="G$1" pin="FB"/>
-<wire x1="33.02" y1="198.12" x2="35.56" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="198.12" x2="35.56" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="193.04" x2="45.72" y2="193.04" width="0.1524" layer="91"/>
-<junction x="45.72" y="193.04"/>
+<wire x1="25.4" y1="198.12" x2="27.94" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="198.12" x2="27.94" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="193.04" x2="38.1" y2="193.04" width="0.1524" layer="91"/>
+<junction x="38.1" y="193.04"/>
 </segment>
 </net>
 <net name="VIN" class="0">
 <segment>
-<wire x1="-45.72" y1="205.74" x2="-38.1" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="205.74" x2="-48.26" y2="205.74" width="0.1524" layer="91"/>
-<label x="-48.26" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-53.34" y1="205.74" x2="-45.72" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="205.74" x2="-55.88" y2="205.74" width="0.1524" layer="91"/>
+<label x="-55.88" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="D1" gate="G$1" pin="K"/>
-<wire x1="-40.64" y1="215.9" x2="-38.1" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="215.9" x2="-38.1" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="215.9" x2="-45.72" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="215.9" x2="-45.72" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="FB1" gate="G$1" pin="1"/>
-<wire x1="-38.1" y1="205.74" x2="-35.56" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="205.74" x2="-33.02" y2="205.74" width="0.1524" layer="91"/>
-<junction x="-38.1" y="205.74"/>
+<wire x1="-45.72" y1="205.74" x2="-43.18" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="205.74" x2="-40.64" y2="205.74" width="0.1524" layer="91"/>
+<junction x="-45.72" y="205.74"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="-35.56" y1="203.2" x2="-35.56" y2="205.74" width="0.1524" layer="91"/>
-<junction x="-35.56" y="205.74"/>
+<wire x1="-43.18" y1="203.2" x2="-43.18" y2="205.74" width="0.1524" layer="91"/>
+<junction x="-43.18" y="205.74"/>
 </segment>
 <segment>
 <pinref part="CON2" gate="G$1" pin="59"/>
@@ -5833,75 +6043,75 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <net name="+3V3_LDO" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="OUT"/>
-<wire x1="33.02" y1="248.92" x2="35.56" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="248.92" x2="27.94" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="FB2" gate="G$1" pin="1"/>
 <pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="248.92" x2="38.1" y2="248.92" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="246.38" x2="35.56" y2="248.92" width="0.1524" layer="91"/>
-<junction x="35.56" y="248.92"/>
+<wire x1="27.94" y1="248.92" x2="30.48" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="246.38" x2="27.94" y2="248.92" width="0.1524" layer="91"/>
+<junction x="27.94" y="248.92"/>
 </segment>
 </net>
 <net name="1.8V_DCDC_SW" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="SW"/>
-<wire x1="33.02" y1="203.2" x2="35.56" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="203.2" x2="27.94" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN_DCDC" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="VIN"/>
 <pinref part="IC4" gate="G$1" pin="EN"/>
-<wire x1="7.62" y1="198.12" x2="7.62" y2="205.74" width="0.1524" layer="91"/>
-<junction x="7.62" y="205.74"/>
-<wire x1="7.62" y1="205.74" x2="5.08" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="205.74" x2="-2.54" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="-2.54" y1="205.74" x2="-5.08" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="205.74" x2="-10.16" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="205.74" x2="-5.08" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="203.2" x2="-5.08" y2="205.74" width="0.1524" layer="91"/>
-<junction x="-5.08" y="205.74"/>
-<wire x1="-5.08" y1="205.74" x2="-7.62" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="0" y1="198.12" x2="0" y2="205.74" width="0.1524" layer="91"/>
+<junction x="0" y="205.74"/>
+<wire x1="0" y1="205.74" x2="-2.54" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="205.74" x2="-10.16" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="-10.16" y1="205.74" x2="-12.7" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="205.74" x2="-17.78" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="205.74" x2="-12.7" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="203.2" x2="-12.7" y2="205.74" width="0.1524" layer="91"/>
+<junction x="-12.7" y="205.74"/>
+<wire x1="-12.7" y1="205.74" x2="-15.24" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="-7.62" y1="205.74" x2="-10.16" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="203.2" x2="-10.16" y2="205.74" width="0.1524" layer="91"/>
-<junction x="-10.16" y="205.74"/>
-<wire x1="-10.16" y1="205.74" x2="-15.24" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="205.74" x2="-17.78" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="203.2" x2="-17.78" y2="205.74" width="0.1524" layer="91"/>
+<junction x="-17.78" y="205.74"/>
+<wire x1="-17.78" y1="205.74" x2="-22.86" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="FB1" gate="G$1" pin="2"/>
-<label x="-7.62" y="205.74" size="1.778" layer="95"/>
+<label x="-15.24" y="205.74" size="1.778" layer="95"/>
 <pinref part="IC2" gate="G$1" pin="IN"/>
 <pinref part="IC2" gate="G$1" pin="EN"/>
-<wire x1="-15.24" y1="205.74" x2="-22.86" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="246.38" x2="7.62" y2="248.92" width="0.1524" layer="91"/>
-<junction x="7.62" y="248.92"/>
-<wire x1="7.62" y1="248.92" x2="5.08" y2="248.92" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="5.08" y1="246.38" x2="5.08" y2="248.92" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="228.6" x2="-2.54" y2="248.92" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="248.92" x2="5.08" y2="248.92" width="0.1524" layer="91"/>
-<junction x="5.08" y="248.92"/>
+<wire x1="-22.86" y1="205.74" x2="-30.48" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="0" y1="246.38" x2="0" y2="248.92" width="0.1524" layer="91"/>
+<junction x="0" y="248.92"/>
+<wire x1="0" y1="248.92" x2="-2.54" y2="248.92" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="-2.54" y1="246.38" x2="-2.54" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="228.6" x2="-10.16" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="248.92" x2="-2.54" y2="248.92" width="0.1524" layer="91"/>
+<junction x="-2.54" y="248.92"/>
 <pinref part="IC5" gate="G$1" pin="VIN"/>
 <pinref part="IC5" gate="G$1" pin="EN"/>
-<wire x1="7.62" y1="167.64" x2="7.62" y2="175.26" width="0.1524" layer="91"/>
-<junction x="7.62" y="175.26"/>
-<wire x1="7.62" y1="175.26" x2="5.08" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="175.26" x2="5.08" y2="205.74" width="0.1524" layer="91"/>
-<junction x="5.08" y="205.74"/>
+<wire x1="0" y1="167.64" x2="0" y2="175.26" width="0.1524" layer="91"/>
+<junction x="0" y="175.26"/>
+<wire x1="0" y1="175.26" x2="-2.54" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="175.26" x2="-2.54" y2="205.74" width="0.1524" layer="91"/>
+<junction x="-2.54" y="205.74"/>
 <pinref part="IC3" gate="G$1" pin="IN"/>
 <pinref part="IC3" gate="G$1" pin="EN"/>
-<wire x1="7.62" y1="226.06" x2="7.62" y2="228.6" width="0.1524" layer="91"/>
-<junction x="7.62" y="228.6"/>
-<wire x1="7.62" y1="228.6" x2="5.08" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="5.08" y1="226.06" x2="5.08" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="228.6" x2="5.08" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="0" y1="226.06" x2="0" y2="228.6" width="0.1524" layer="91"/>
+<junction x="0" y="228.6"/>
+<wire x1="0" y1="228.6" x2="-2.54" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="-2.54" y1="226.06" x2="-2.54" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="228.6" x2="-2.54" y2="228.6" width="0.1524" layer="91"/>
+<junction x="-10.16" y="228.6"/>
 <junction x="-2.54" y="228.6"/>
-<junction x="5.08" y="228.6"/>
-<wire x1="-2.54" y1="228.6" x2="-2.54" y2="205.74" width="0.1524" layer="91"/>
-<junction x="-2.54" y="205.74"/>
+<wire x1="-10.16" y1="228.6" x2="-10.16" y2="205.74" width="0.1524" layer="91"/>
+<junction x="-10.16" y="205.74"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="-15.24" y1="203.2" x2="-15.24" y2="205.74" width="0.1524" layer="91"/>
-<junction x="-15.24" y="205.74"/>
+<wire x1="-22.86" y1="203.2" x2="-22.86" y2="205.74" width="0.1524" layer="91"/>
+<junction x="-22.86" y="205.74"/>
 </segment>
 </net>
 <net name="PROGRAM_B" class="0">
@@ -5913,7 +6123,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <segment>
 <wire x1="195.58" y1="129.54" x2="177.8" y2="129.54" width="0.1524" layer="91"/>
 <label x="170.18" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="129.54" x2="170.18" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="137.16" x2="177.8" y2="129.54" width="0.1524" layer="91"/>
 <junction x="177.8" y="129.54"/>
@@ -5926,7 +6136,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="-15.24" y="30.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="172.72" y1="137.16" x2="172.72" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="134.62" x2="170.18" y2="134.62" width="0.1524" layer="91"/>
 <label x="170.18" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -5958,13 +6168,13 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="76.2" y="101.6" size="1.27" layer="95" xref="yes"/>
 <wire x1="45.72" y1="104.14" x2="45.72" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="C23" gate="G$1" pin="1"/>
+<pinref part="C27" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="101.6" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
 <junction x="58.42" y="101.6"/>
-<pinref part="C27" gate="G$1" pin="1"/>
+<pinref part="C31" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="101.6" x2="71.12" y2="101.6" width="0.1524" layer="91"/>
 <junction x="66.04" y="101.6"/>
-<pinref part="C29" gate="G$1" pin="1"/>
+<pinref part="C33" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
 <junction x="71.12" y="101.6"/>
 </segment>
@@ -5981,16 +6191,16 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="81.28" y="86.36" size="1.27" layer="95" xref="yes"/>
 <wire x1="45.72" y1="88.9" x2="45.72" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="86.36" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="C24" gate="G$1" pin="1"/>
+<pinref part="C28" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="86.36" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
 <junction x="58.42" y="86.36"/>
-<pinref part="C28" gate="G$1" pin="1"/>
+<pinref part="C32" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="86.36" x2="71.12" y2="86.36" width="0.1524" layer="91"/>
 <junction x="66.04" y="86.36"/>
-<pinref part="C30" gate="G$1" pin="1"/>
+<pinref part="C34" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="86.36" x2="76.2" y2="86.36" width="0.1524" layer="91"/>
 <junction x="71.12" y="86.36"/>
-<pinref part="C31" gate="G$1" pin="1"/>
+<pinref part="C35" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="86.36" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
 <junction x="76.2" y="86.36"/>
 </segment>
@@ -5998,17 +6208,17 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <net name="+1V0_DCDC" class="0">
 <segment>
 <pinref part="IC5" gate="G$1" pin="OUT"/>
-<wire x1="33.02" y1="175.26" x2="40.64" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="175.26" x2="33.02" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="FB5" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="175.26" x2="41.91" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="41.91" y1="175.26" x2="45.72" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="175.26" x2="34.29" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="34.29" y1="175.26" x2="38.1" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="C20" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="175.26" x2="48.26" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="172.72" x2="40.64" y2="175.26" width="0.1524" layer="91"/>
-<junction x="40.64" y="175.26"/>
+<wire x1="38.1" y1="175.26" x2="40.64" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="172.72" x2="33.02" y2="175.26" width="0.1524" layer="91"/>
+<junction x="33.02" y="175.26"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="172.72" x2="45.72" y2="175.26" width="0.1524" layer="91"/>
-<junction x="45.72" y="175.26"/>
+<wire x1="38.1" y1="172.72" x2="38.1" y2="175.26" width="0.1524" layer="91"/>
+<junction x="38.1" y="175.26"/>
 </segment>
 </net>
 <net name="+1V0_DCDC_FB" class="0">
@@ -6016,16 +6226,16 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="IC5" gate="G$1" pin="FB"/>
-<wire x1="33.02" y1="167.64" x2="35.56" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="167.64" x2="35.56" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="162.56" x2="45.72" y2="162.56" width="0.1524" layer="91"/>
-<junction x="45.72" y="162.56"/>
+<wire x1="25.4" y1="167.64" x2="27.94" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="167.64" x2="27.94" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="162.56" x2="38.1" y2="162.56" width="0.1524" layer="91"/>
+<junction x="38.1" y="162.56"/>
 </segment>
 </net>
 <net name="1.0V_DCDC_SW" class="0">
 <segment>
 <pinref part="IC5" gate="G$1" pin="SW"/>
-<wire x1="33.02" y1="172.72" x2="35.56" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="172.72" x2="27.94" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IO7N_34" class="0">
@@ -7005,30 +7215,30 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="D5" gate="G$1" pin="K"/>
 </segment>
 </net>
 <net name="+2V5_LDO" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="OUT"/>
-<wire x1="33.02" y1="228.6" x2="35.56" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="228.6" x2="27.94" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="FB3" gate="G$1" pin="1"/>
 <pinref part="C18" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="228.6" x2="38.1" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="226.06" x2="35.56" y2="228.6" width="0.1524" layer="91"/>
-<junction x="35.56" y="228.6"/>
+<wire x1="27.94" y1="228.6" x2="30.48" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="226.06" x2="27.94" y2="228.6" width="0.1524" layer="91"/>
+<junction x="27.94" y="228.6"/>
 </segment>
 </net>
 <net name="+2V5" class="0">
 <segment>
 <pinref part="C22" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="226.06" x2="50.8" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="226.06" x2="43.18" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="FB3" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="228.6" x2="48.26" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="228.6" x2="55.88" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="228.6" x2="55.88" y2="231.14" width="0.1524" layer="91"/>
-<junction x="50.8" y="228.6"/>
+<wire x1="43.18" y1="228.6" x2="40.64" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="228.6" x2="48.26" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="228.6" x2="48.26" y2="231.14" width="0.1524" layer="91"/>
+<junction x="43.18" y="228.6"/>
 <pinref part="+2V1" gate="G$1" pin="+2V5"/>
 </segment>
 <segment>
@@ -7054,13 +7264,32 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="+2V5" gate="G$1" pin="+2V5"/>
 </segment>
 </net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="OUT"/>
+<wire x1="264.16" y1="55.88" x2="266.7" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="CLK_25M" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="271.78" y1="55.88" x2="274.32" y2="55.88" width="0.1524" layer="91"/>
+<label x="274.32" y="55.88" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$3" pin="IO_L13P_T2_MRCC_14"/>
+<wire x1="48.26" y1="-2.54" x2="50.8" y2="-2.54" width="0.1524" layer="91"/>
+<label x="50.8" y="-2.54" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
 <approved hash="202,1,276.86,233.68,IC8,VREGIN,,,,"/>
-<approved hash="106,1,33.02,172.72,1.0V_DCDC_SW,,,,,"/>
-<approved hash="106,1,33.02,203.2,1.8V_DCDC_SW,,,,,"/>
+<approved hash="106,1,25.4,172.72,1.0V_DCDC_SW,,,,,"/>
+<approved hash="106,1,25.4,203.2,1.8V_DCDC_SW,,,,,"/>
 </errors>
 </schematic>
 </drawing>
