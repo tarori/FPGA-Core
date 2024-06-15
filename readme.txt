@@ -1,0 +1,1 @@
+All vias with 0.35mm drill diameter should be filled and capped.
